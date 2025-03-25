@@ -5,7 +5,7 @@ from func_ficheros import on_button_click
 # Crear la ventana principal
 ventana = tk.Tk()
 ventana.title("Buscador de Documentos")
-ventana.geometry("400x300")
+ventana.geometry("600x400")
 
 # Etiquetas y campos de entrada
 label_fecha_inicio = tk.Label(ventana, text="Fecha de inicio (DD-MM-YYYY):")
