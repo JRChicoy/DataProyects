@@ -20,7 +20,7 @@ label_fecha_fin.pack(pady=5)
 entry_fecha_fin = tk.Entry(ventana)
 entry_fecha_fin.pack(pady=5)
 
-label_formatos = tk.Label(ventana, text="Formatos a buscar (separados por ', '):")
+label_formatos = tk.Label(ventana, text="Formatos a buscar (separados por ','):")
 label_formatos.pack(pady=5)
 
 entry_formatos = tk.Entry(ventana)
