@@ -29,14 +29,17 @@ def ask_rag(query, top_k=1):
     if not hits:
         return {"error": " NO ENCONTRADO: No hay ninguna noticia que coincida exactamente con la búsqueda."}
 
-    # --- B. EXTRACCIÓN ---
-    doc = hits[0]['_source']
-    contexto_unico = f"""
-    TITULO: {doc.get('title')}
-    FECHA: {doc.get('date', 'Desconocida')}
-    FUENTE: {doc.get('source', 'Desconocida')}
-    CONTENIDO: {doc.get('body')}
-    """
+    # --- B. EXTRACCIÓN --- modificamos para concatenar todas las noticias recuperadas en un solo contexto (top_k mayor a 1)
+    contexto_unico = ""
+    for i, hit in enumerate(hits):
+        doc = hit['_source']
+        contexto_unico += f"""
+        --- NOTICIA {i+1} ---
+        TITULO: {doc.get('title')}
+        FECHA: {doc.get('date', 'Desconocida')}
+        FUENTE: {doc.get('source', 'Desconocida')}
+        CONTENIDO: {doc.get('body')}
+        \n"""
 
     # --- C. PROMPT ---
     messages = [
@@ -110,13 +113,16 @@ def ask_rag_vectorial(query, top_k=1):
         return {"error": " NO ENCONTRADO: No hay ninguna noticia cercana a esta búsqueda."}
 
     # --- B. EXTRACCIÓN ---
-    doc = hits[0]['_source']
-    contexto_unico = f"""
-    TITULO: {doc.get('title')}
-    FECHA: {doc.get('date', 'Desconocida')}
-    FUENTE: {doc.get('source', 'Desconocida')}
-    CONTENIDO: {doc.get('body')}
-    """
+    contexto_unico = ""
+    for i, hit in enumerate(hits):
+        doc = hit['_source']
+        contexto_unico += f"""
+        --- NOTICIA {i+1} ---
+        TITULO: {doc.get('title')}
+        FECHA: {doc.get('date', 'Desconocida')}
+        FUENTE: {doc.get('source', 'Desconocida')}
+        CONTENIDO: {doc.get('body')}
+        \n"""
 
     # --- C. PROMPT ---
     messages = [
