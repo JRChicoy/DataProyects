@@ -1,6 +1,13 @@
-# --- 2. FUNCIONES DE RECUPERACIÓN (VOLVEMOS A K=1) ---
-
-def retrieve_bm25(query, top_k=1): # <- CAMBIO CRÍTICO: top_k=1
+import torch
+from elasticsearch import Elasticsearch
+from sentence_transformers import SentenceTransformer
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+def ask_rag(query, top_k=1): 
+    """
+    Función RAG para TFG: Recupera 1 noticia y genera respuesta basada estrictamente en ella.
+    Retorna un diccionario con los datos separados.
+    """
+    # --- A. BÚSQUEDA ---
     search_payload = {
         "size": top_k,
         "query": {
@@ -14,69 +21,24 @@ def retrieve_bm25(query, top_k=1): # <- CAMBIO CRÍTICO: top_k=1
     }
     
     try:
-        response = es.search(index=INDEX_BM25, body=search_payload)
+        response = es.search(index="noticias_tfg", body=search_payload)
         hits = response['hits']['hits']
     except Exception as e:
-        print(f"Error en Elasticsearch: {e}")
-        return "", []
+        return {"error": f"Error en Elasticsearch: {e}"}
     
     if not hits:
-        return "", []
+        return {"error": " NO ENCONTRADO: No hay ninguna noticia que coincida exactamente con la búsqueda."}
 
-    contexto_total = ""
-    fuentes = []
-    for hit in hits:
-        doc = hit['_source']
-        contexto_total += f"""
-        TITULO: {doc.get('title')}
-        FECHA: {doc.get('date', 'Desconocida')}
-        FUENTE: {doc.get('source', 'Desconocida')}
-        CONTENIDO: {doc.get('body')}
-        """
-        fuentes.append(f"{doc.get('source', 'Desconocido')} - {doc.get('title', 'Sin título')}")
+    # --- B. EXTRACCIÓN ---
+    doc = hits[0]['_source']
+    contexto_unico = f"""
+    TITULO: {doc.get('title')}
+    FECHA: {doc.get('date', 'Desconocida')}
+    FUENTE: {doc.get('source', 'Desconocida')}
+    CONTENIDO: {doc.get('body')}
+    """
 
-    return contexto_total, fuentes
-
-def retrieve_vectorial(query, top_k=1): # <- CAMBIO CRÍTICO: top_k=1
-    vector_pregunta = embed_model.encode(query).tolist()
-    
-    query_knn = {
-        "field": "vector_texto",
-        "query_vector": vector_pregunta,
-        "k": top_k,
-        "num_candidates": 50
-    }
-    
-    try:
-        response = es.search(index=INDEX_VECTORIAL, knn=query_knn, _source=["title", "body", "date", "source"], size=top_k)
-        hits = response['hits']['hits']
-    except Exception as e:
-        print(f"Error en Elasticsearch: {e}")
-        return "", []
-        
-    if not hits:
-        return "", []
-
-    contexto_total = ""
-    fuentes = []
-    for hit in hits:
-        doc = hit['_source']
-        contexto_total += f"""
-        TITULO: {doc.get('title')}
-        FECHA: {doc.get('date', 'Desconocida')}
-        FUENTE: {doc.get('source', 'Desconocida')}
-        CONTENIDO: {doc.get('body')}
-        """
-        fuentes.append(f"{doc.get('source', 'Desconocido')} - {doc.get('title', 'Sin título')}")
-
-    return contexto_total, fuentes
-
-# --- 3. GENERACIÓN LIMPÍA (SIN WARNINGS) ---
-
-def generar_respuesta(query, contexto_total):
-    if not contexto_total.strip():
-        return "No tengo información suficiente en mis archivos."
-    
+    # --- C. PROMPT ---
     messages = [
         {"role": "user", "content": f"""
         Eres un sistema de verificación de datos (Fact-Checking). 
@@ -88,19 +50,110 @@ def generar_respuesta(query, contexto_total):
         3. No menciones otras noticias que no sean la proporcionada.
 
         ### TEXTO DE REFERENCIA:
-        {contexto_total}
+        {contexto_unico}
         
         ### PREGUNTA:
         {query}
         """}
     ]
-    
-    # Hemos quitado 'temperature' para arreglar el warning de do_sample=False
+
+    # --- D. GENERACIÓN ---
     outputs = pipe(
         messages,
         max_new_tokens=256,
-        do_sample=False 
+        do_sample=False,
+        temperature=0.0, 
     )
     
+    # --- E. RETORNO ESTRUCTURADO  ---
+    # Extraemos solo el texto del último mensaje 
     respuesta_limpia = outputs[0]['generated_text'][-1]['content']
-    return respuesta_limpia.strip()
+    
+    return {
+        "titulo": doc.get('title'),
+        "contenido": doc.get('body'),
+        "fecha": doc.get('date'),
+        "fuente": doc.get('source'),
+        "respuesta_rag": respuesta_limpia # Aquí va solo el texto que querías
+    }
+
+print("Sistema RAG (k=1) reconfigurado para devolver datos separados.")
+
+
+def ask_rag_vectorial(query, top_k=1): 
+    """
+    Función RAG Vectorial: Recupera 1 noticia (kNN) y genera respuesta basada estrictamente en ella.
+    Retorna un diccionario con los datos separados.
+    """
+    # --- A. BÚSQUEDA VECTORIAL (kNN) ---
+    vector_pregunta = embed_model.encode(query).tolist()
+    
+    query_knn = {
+        "field": "vector_texto",
+        "query_vector": vector_pregunta,
+        "k": top_k,
+        "num_candidates": 50
+    }
+    
+    try:
+        response = es.search(
+            index="noticias_tfg_vectores", 
+            knn=query_knn, 
+            _source=["title", "body", "date", "source"], 
+            size=top_k
+        )
+        hits = response['hits']['hits']
+    except Exception as e:
+        return {"error": f"Error en Elasticsearch: {e}"}
+    
+    if not hits:
+        return {"error": " NO ENCONTRADO: No hay ninguna noticia cercana a esta búsqueda."}
+
+    # --- B. EXTRACCIÓN ---
+    doc = hits[0]['_source']
+    contexto_unico = f"""
+    TITULO: {doc.get('title')}
+    FECHA: {doc.get('date', 'Desconocida')}
+    FUENTE: {doc.get('source', 'Desconocida')}
+    CONTENIDO: {doc.get('body')}
+    """
+
+    # --- C. PROMPT ---
+    messages = [
+        {"role": "user", "content": f"""
+        Eres un sistema de verificación de datos (Fact-Checking). 
+        Tu objetivo es responder a la pregunta usando ÚNICAMENTE el texto que te proporciono abajo.
+
+        REGLAS CRÍTICAS:
+        1. Si la respuesta no aparece en el texto, responde exactamente: "No tengo información suficiente en mis archivos".
+        2. No utilices conocimiento externo.
+        3. No menciones otras noticias que no sean la proporcionada.
+
+        ### TEXTO DE REFERENCIA:
+        {contexto_unico}
+        
+        ### PREGUNTA:
+        {query}
+        """}
+    ]
+
+    # --- D. GENERACIÓN ---
+    outputs = pipe(
+        messages,
+        max_new_tokens=256,
+        do_sample=False,
+        temperature=0.0, 
+    )
+    
+    # --- E. RETORNO ESTRUCTURADO ---
+    respuesta_limpia = outputs[0]['generated_text'][-1]['content']
+    
+    return {
+        "titulo": doc.get('title'),
+        "contenido": doc.get('body'),
+        "fecha": doc.get('date'),
+        "fuente": doc.get('source'),
+        "respuesta_rag": respuesta_limpia
+    }
+
+print("Sistema RAG Vectorial (k=1) configurado.")
