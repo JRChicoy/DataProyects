@@ -49,8 +49,8 @@ def ask_rag(query, top_k=1):
 
         REGLAS CRÍTICAS:
         1. Si la respuesta no aparece en el texto, responde exactamente: "No tengo información suficiente en mis archivos".
-        2. No utilices conocimiento externo.
-        3. No menciones otras noticias que no sean la proporcionada.
+        1. Formula tu respuesta usando solo los datos del texto. Puedes conectar ideas que estén en la noticia, pero NUNCA uses conocimiento externo ni inventes datos.
+        3. No menciones otras noticias que no sean las proporcionadas.
 
         ### TEXTO DE REFERENCIA:
         {contexto_unico}
@@ -69,15 +69,14 @@ def ask_rag(query, top_k=1):
     )
     
     # --- E. RETORNO ESTRUCTURADO  ---
-    # Extraemos solo el texto del último mensaje 
     respuesta_limpia = outputs[0]['generated_text'][-1]['content']
     
     return {
-        "titulo": doc.get('title'),
-        "contenido": doc.get('body'),
-        "fecha": doc.get('date'),
-        "fuente": doc.get('source'),
-        "respuesta_rag": respuesta_limpia # Aquí va solo el texto que querías
+        "titulo": [hit['_source'].get('title') for hit in hits],
+        "contenido": [hit['_source'].get('body') for hit in hits],
+        "fecha": [hit['_source'].get('date', 'Desconocida') for hit in hits],
+        "fuente": [hit['_source'].get('source', 'Desconocida') for hit in hits],
+        "respuesta_rag": respuesta_limpia
     }
 
 print("Sistema RAG (k=1) reconfigurado para devolver datos separados.")
@@ -132,8 +131,8 @@ def ask_rag_vectorial(query, top_k=1):
 
         REGLAS CRÍTICAS:
         1. Si la respuesta no aparece en el texto, responde exactamente: "No tengo información suficiente en mis archivos".
-        2. No utilices conocimiento externo.
-        3. No menciones otras noticias que no sean la proporcionada.
+        1. Formula tu respuesta usando solo los datos del texto. Puedes conectar ideas que estén en la noticia, pero NUNCA uses conocimiento externo ni inventes datos.
+        3. No menciones otras noticias que no sean las proporcionadas.
 
         ### TEXTO DE REFERENCIA:
         {contexto_unico}
@@ -151,15 +150,16 @@ def ask_rag_vectorial(query, top_k=1):
         temperature=0.0, 
     )
     
-    # --- E. RETORNO ESTRUCTURADO ---
+    # --- E. RETORNO ESTRUCTURADO  ---
     respuesta_limpia = outputs[0]['generated_text'][-1]['content']
     
     return {
-        "titulo": doc.get('title'),
-        "contenido": doc.get('body'),
-        "fecha": doc.get('date'),
-        "fuente": doc.get('source'),
+        "titulo": [hit['_source'].get('title') for hit in hits],
+        "contenido": [hit['_source'].get('body') for hit in hits],
+        "fecha": [hit['_source'].get('date', 'Desconocida') for hit in hits],
+        "fuente": [hit['_source'].get('source', 'Desconocida') for hit in hits],
         "respuesta_rag": respuesta_limpia
     }
+
 
 print("Sistema RAG Vectorial (k=1) configurado.")
