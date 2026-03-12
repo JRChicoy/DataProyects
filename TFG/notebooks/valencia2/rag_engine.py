@@ -49,7 +49,7 @@ def ask_rag(query, top_k=1):
 
         REGLAS CRÍTICAS:
         1. Si la respuesta no aparece en el texto, responde exactamente: "No tengo información suficiente en mis archivos".
-        1. Formula tu respuesta usando solo los datos del texto. Puedes conectar ideas que estén en la noticia, pero NUNCA uses conocimiento externo ni inventes datos.
+        2. Formula tu respuesta usando solo los datos del texto. Puedes conectar ideas que estén en la noticia, pero NUNCA uses conocimiento externo ni inventes datos.
         3. No menciones otras noticias que no sean las proporcionadas.
 
         ### TEXTO DE REFERENCIA:
@@ -131,7 +131,7 @@ def ask_rag_vectorial(query, top_k=1):
 
         REGLAS CRÍTICAS:
         1. Si la respuesta no aparece en el texto, responde exactamente: "No tengo información suficiente en mis archivos".
-        1. Formula tu respuesta usando solo los datos del texto. Puedes conectar ideas que estén en la noticia, pero NUNCA uses conocimiento externo ni inventes datos.
+        2. Formula tu respuesta usando solo los datos del texto. Puedes conectar ideas que estén en la noticia, pero NUNCA uses conocimiento externo ni inventes datos.
         3. No menciones otras noticias que no sean las proporcionadas.
 
         ### TEXTO DE REFERENCIA:
