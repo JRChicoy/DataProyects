@@ -48,10 +48,10 @@ def ask_rag(query, top_k=1):
         Tu objetivo es responder a la pregunta usando ÚNICAMENTE el texto que te proporciono abajo.
 
         REGLAS CRÍTICAS:
-        1. Si la respuesta no aparece en el texto, responde exactamente: "No tengo información suficiente en mis archivos".
+        1. Si la respuesta no aparece en el texto o no hay informacion que responda a la pregunta, responde exactamente: "No tengo información suficiente en mis archivos".
         2. Formula tu respuesta usando solo los datos del texto. Puedes conectar ideas que estén en la noticia, pero NUNCA uses conocimiento externo ni inventes datos.
         3. No menciones otras noticias que no sean las proporcionadas.
-        4. Se claro y conciso.
+        4. Las respuestas deberán ser cortas y directas.
 
         ### TEXTO DE REFERENCIA:
         {contexto_unico}
@@ -60,6 +60,7 @@ def ask_rag(query, top_k=1):
         {query}
         """}
     ]
+
 
     # --- D. GENERACIÓN ---
     outputs = pipe(
@@ -131,10 +132,10 @@ def ask_rag_vectorial(query, top_k=1):
         Tu objetivo es responder a la pregunta usando ÚNICAMENTE el texto que te proporciono abajo.
 
         REGLAS CRÍTICAS:
-        1. Si la respuesta no aparece en el texto, responde exactamente: "No tengo información suficiente en mis archivos".
+        1. Si la respuesta no aparece en el texto o no hay informacion que responda a la pregunta, responde exactamente: "No tengo información suficiente en mis archivos".
         2. Formula tu respuesta usando solo los datos del texto. Puedes conectar ideas que estén en la noticia, pero NUNCA uses conocimiento externo ni inventes datos.
         3. No menciones otras noticias que no sean las proporcionadas.
-        4. Se claro y conciso.
+        4. Las respuestas deberán ser cortas y directas.
 
         ### TEXTO DE REFERENCIA:
         {contexto_unico}
@@ -143,6 +144,7 @@ def ask_rag_vectorial(query, top_k=1):
         {query}
         """}
     ]
+
 
     # --- D. GENERACIÓN ---
     outputs = pipe(
