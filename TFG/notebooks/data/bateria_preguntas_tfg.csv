@@ -1,0 +1,81 @@
+id,tipo,pregunta,respuesta_esperada
+1,Factual,¿A cuanto llego a subir Trump los aranceles a China?,145%.
+2,Factual,¿Cuánto dinero perdió Elon Musk tras el anuncio de los aranceles?,17.800 millones de dólares.
+3,Trampa,¿Qué opinó el Rey de España sobre los aranceles de Trump a China?,No tengo información suficiente en mis archivos.
+4,Trampa,¿Qué declaraciones hizo Elon Musk sobre los aranceles de donald Trump a China?,No tengo información suficiente en mis archivos.
+5,Inferencia,¿Qué relación quiere Elon Musk entre Estados Unidos y Europa según sus declaraciones en Italia?,Quiere una zona de libre comercio con aranceles cero.
+6,Factual,¿Qué presidente firmó un decreto para centralizar la regulación de la inteligencia artificial?,Donald Trump.
+7,Inferencia,¿Por qué Donald Trump quiere quitar a los estados el derecho a regular la inteligencia artificial por su cuenta?,Debe haber un único manual si queremos seguir liderando en inteligencia artificial
+8,Trampa,¿Qué opinó Felipe González sobre el decreto de inteligencia artificial de Trump?,No tengo información suficiente en mis archivos.
+9,Factual,¿Por cuántas temporadas ha fichado Kylian Mbappé con el Real Madrid?,Por cinco temporadas.
+10,Inferencia,¿Por qué el artículo de El País dice que el comunicado del fichaje de Mbappé cayó en medio de una resaca emocional?,Porque el anuncio se hizo menos de 24 horas después de que terminaran las celebraciones por la 15ª Copa de Europa del Real Madrid.
+11,Factual,¿Cuál dijo Pedro Sánchez que era su principal prioridad en la clausura del 41 Congreso Federal del PSOE?,ganar las elecciones municipales y autonómicas de 2027 y volver a gobernar en toda España
+12,Trampa,¿Cuando dimitió Pedro Sánchez como presidente?,No tengo información suficiente en mis archivos.
+13,Factual,¿Cuanto patrimonio tiene Elon Musk?,Mas de 400.000 millones de dólares
+14,Inferencia,¿Por qué fue demandado Elon Musk por la Fiscalía de Filadelfia en 2024?,Porque prometió dar 1 millón de dolares a votantes de las elecciones
+15,Trampa,¿Cuántos bitcoins propuso repartir Donald Trump como renta básica universal?,No tengo información suficiente en mis archivos.
+16,Factual,¿Cuántas personas murieron en la dana de Valencia?,227 personas.
+17,Factual,¿Qué enfermedades se asocian al uranio de los proyectiles antitanque utilizados en la guerra en Ucrania?,"Algunos estudios lo asocian con cáncer, problemas renales o efectos en el desarrollo infantil."
+18,Inferencia,¿Por qué el aumento de polacos y ucranianos que compran vivienda en España para huir de la guerra apenas recurre a la financiación de una hipoteca?,Porque tienen un poder adquisitivo elevado y un patrimonio alto que les permite no necesitar una hipoteca.
+19,Factual,¿A quién designó Donald Trump para servir como secretario de Defensa en 2025?, Donald Trump designó a Pete Hegseth.
+20,Trampa,¿Cuántos soldados estadounidenses ha prometido enviar Donald Trump para formar una fuerza de paz en Ucrania?,No tengo información suficiente en mis archivos.
+21,Factual,¿Qué cantidad económica donó el Grupo Renault a los afectados por la DANA en Valencia y quién es el CEO de la compañía?,Donó un millón de euros y su CEO es Luca de Meo.
+22,Inferencia,"Durante su concierto en Valencia, ¿qué canción improvisó Bryan Adams y con qué propósito en relación a la DANA?",Improvisó una versión de 'Come Together' de The Beatles como símbolo de unión entre el artista y la comunidad afectada.
+23,Trampa,¿Qué cantidad económica donó el futbolista Kylian Mbappé a los afectados por la DANA de Valencia?,No tengo información suficiente en mis archivos.
+24,Inferencia,¿A quien iba dirigido el mensaje en el tapiz floral de la Basílica durante la festividad de la patrona de Valencia tras el paso de la DANA?,a los voluntarios que acudieron a las zonas afectadas para ayudar de manera desinteresada tras la dana
+25,Factual,¿Con cuántas psicólogas especialistas se reforzó la atención del teléfono 016 en los municipios afectados por la DANA en Valencia?,Con cuatro psicólogas especialistas.
+26,Factual,"Ante el retraso de SpaceX en la misión a la Luna y la actual guerra en la NASA por su jefatura, ¿a qué otra empresa mencionó el administrador interino Sean Duffy para abrir los contratos del módulo de aterrizaje?","Mencionó a Blue Origin, la empresa de Jeff Bezos."
+27,Inferencia,¿Qué fallo provocó que la nave Hakuto-R de SpaceX se estrellara en su intento anterior en 2023?,"Se estrelló porque calculó mal su descenso al pasar sobre un cráter, debido a datos imprecisos sobre la altitud y problemas de software."
+28,Trampa,¿Qué astronauta lidera la tripulación del módulo Blue Ghost en las nuevas misiones a la Luna de SpaceX?,No tengo información suficiente en mis archivos (el texto especifica que es una misión no tripulada).
+29,Inferencia,¿Por qué la nueva vacuna de ARN para el tratamiento del cáncer se tiene que elaborar de manera personalizada para cada paciente?,"Porque los neoantígenos son proteínas anómalas que resultan de mutaciones genéticas, y el perfil de mutaciones es distinto y único en el tumor de cada paciente."
+30,Trampa,¿Qué tipo de cáncer específico le fue diagnosticado al rey Carlos III?,No tengo información suficiente en mis archivos.
+31,Factual,¿Cuánto dinero aproximado le quedó limpio a Carlos Alcaraz por ganar su sexto Grand Slam tras pagar los impuestos federales y de Nueva York?,"Le quedan aproximadamente 2,7 millones de dólares."
+32,Inferencia,¿Qué golpe fundamental ha modificado Carlos Alcaraz en su juego para el Open de Australia??,Ha modificado su saque (el servicio).
+33,Factual,"Mientras el precio de la vivienda frenaba su subida en verano, ¿En que dos comunidades bajó el precio?","En Castilla-La Mancha (caída del 12,8%) y Asturias (caída del 3,1%)."
+34,Inferencia,¿Qué medida propone Santiago Niño Becerra para evitar la constante revalorización del mercado y poner solución a los problemas de vivienda en España?,Propone crear un gran parque de vivienda pública destinado exclusivamente al alquiler.
+35,Factual,¿A partir de que día se prohibe Tiktok en Estados Unidos?,A partir del domingo 19 de enero de 2025.
+36,Factual,"¿Qué jugadores metieron gol para asegurar el 2-1 en el España-Inglaterra, dándole a España su cuarta Eurocopa?",Nico Williams y Mikel Oyarzabal.
+37,Inferencia,¿Qué dos hechos deportivos que sucedieron el mismo dia hicieron que L'Équipe titulara 'los nuevos reyes de España'?,Porque coincidió que en el mismo día los futbolistas de la selección se proclamaron campeones de Europa y el tenista Carlos Alcaraz retuvo su título en Wimbledon.
+38,Factual,¿Cuántos autogoles o goles en propia puerta se le atribuyen a Harry Kane en la final de la Eurocopa 2024,Ninguno
+39,Trampa,"Tras el partido en el que la España de las finales vuelve a ganar la Liga de Naciones, ¿qué entrenadora alemana fue destituida de su cargo?",No tengo información suficiente en mis archivos.
+40,Factual,"Tras el giro del precio del aceite de oliva, ¿a cuánto vende el supermercado Alcampo su garrafa de 5 litros de la marca Suroliva?","A 30,90 euros."
+41,Inferencia,"¿Cuáles son las razones por las que la garrafa de 5 litros de aceite Suroliva ha bajado a 30,90 euros?","debido a una combinación de factores que incluyen la necesidad de liberar stock, la anticipación de una buena cosecha que estabilizará la oferta y la competencia entre supermercados para atraer a los consumidores."
+42,Trampa,¿Qué cadena de supermercados está regalando garrafas de aceite de oliva en Madrid para compensar los problemas de la sequía?,No tengo información suficiente en mis archivos.
+43,Factual,¿De cuántos millones ha sido el impacto económico en Madrid por la hostelería gracias a los conciertos de Taylor Swift?,10 millones de euros.
+44,Inferencia,"Durante su enorme impacto económico en la gira musical, ¿por qué Taylor Swift decidió interpretar las reediciones denominadas 'Taylor's Version' de sus antiguos álbumes?",Para recuperar la propiedad intelectual de su discografía después de que su discográfica anterior le quitara los derechos de sus primeros 7 albumes.
+45,Trampa,"Para los conciertos de Taylor Swift en Madrid, ¿qué famoso jugador de baloncesto subió al escenario del Santiago Bernabéu como invitado sorpresa?",No tengo información suficiente en mis archivos.
+46,Trampa,¿Cuánto dinero le cobró exactamente el presidente del Real Madrid a Taylor Swift por alquilar el estadio de fútbol?,No tengo información suficiente en mis archivos.
+47,Factual,"En relación con el calendario de los Juegos Olímpicos de París 2024, ¿en qué lugar exacto se celebrarán las competiciones de surf para aprovechar las olas?","En Teahupo’o, Tahití."
+48,Trampa,¿Qué material se utilizó específicamente para las palas de padel de los deportistas españoles en los Juegos de París 2024?,No tengo información suficiente en mis archivos.
+49,Inferencia,¿Qué decisión anunció Emmanuel Macron tras la victoria de Le Pen?,Disolver de la Asamblea Nacional y convocar elecciones legislativas
+50,Factual,"En los primeros cien días de su mandato para combatir la crisis, ¿a qué cifra de inflación anual se enfrentó Javier Milei en Argentina al cierre del año 2023?","A una inflación anual del 211,4%."
+51,Inferencia,"Según la situación económica que vive la Argentina de Javier Milei con su alta inflación, ¿por qué motivo exacto una jueza de Nueva York rechazó al país la extensión del plazo para pagar la deuda de YPF?",Porque consideró que el Gobierno argentino no había tomado medidas reales para afrontar el pago de la indemnización ni tenía un cronograma establecido para hacerlo.
+52,Trampa,"Tras convocar elecciones legislativas en Francia, ¿qué cargo público le ofreció Emmanuel Macron a Marine Le Pen para evitar dimitir?",No tengo información suficiente en mis archivos.
+53,Trampa,¿Con qué porcentaje de votos ganó el partido de Los Republicanos las elecciones presidenciales de Francia en 2024?,No tengo información suficiente en mis archivos.
+54,Trampa,¿A qué jugador de la selección nacional de Francia despidió personalmente Javier Milei en Argentina tras el incidente con los cantos racistas?,No tengo información suficiente en mis archivos.
+55,Trampa,¿Cuántos millones de dólares confesó haber robado Javier Milei en la estafa del llamado Criptogate en Argentina?,No tengo información suficiente en mis archivos.
+56,Factual,¿Qué actor protagoniza la película 'On the Waterfront' (1953) mencionada en el artículo de los Óscar?,Marlon Brando
+57,Factual,¿Qué sector profesional organizó las protestas conocidas como 'tractoradas' en distintos puntos de España?,Los agricultores.
+58,Factual,"Según los reportes de RTVE de febrero de 2025, ¿con qué objetivo principal retomaron las tractoradas los agricultores en diferentes puntos de España?",Para pedir cambios en el sector y exigir derechos.
+59,Factual,¿En qué mes del año 2024 organizaron cientos de agricultores tractoradas con la intención de bloquear España?,En el mes de febrero.
+60,Factual,¿Qué tipo de vehículos utilizaron los agricultores en sus manifestaciones para intentar bloquear el país?,Tractores.
+61,Inferencia,¿qué paso en España con cientos de agricultores el martes 6 de febrero de 2024?,"El martes 6 de febrero de 2024, cientos de agricultores en España se movilizaron en protesta"
+62,Factual,¿Qué película ganó el premio a Mejor Película en la edición de los premios Oscar de 2025?,Anora.
+63,Factual,¿Qué cineasta ganó el premio Oscar a Mejor Director en 2025 por la película 'Anora'?,Sean Baker.
+64,Factual,¿Qué actriz se llevó el Oscar a Mejor Actriz Protagonista por su papel en la película 'Anora'?,Mikey Madison.
+65,Factual,¿Qué actor logró el premio Oscar a Mejor Actor Protagonista en 2025 por su actuación en la película 'The Brutalist'?,Adrien Brody ganó el premio Óscar a Mejor Actor Protagonista en 2025.
+66,Factual,¿Cuál fue la película que ganó el Oscar a Mejor Película Internacional en 2025?,I'm Still Here (Aún estoy aquí) de Brasil.
+67,Factual,¿Qué partido político sufrió una derrota histórica en las elecciones del Reino Unido en julio de 2024?,El Partido Conservador.
+68,Factual,"Tras los resultados de las elecciones en el Reino Unido de 2024, ¿qué partido político formó el nuevo Gobierno",El Partido Laborista (Labour Party).
+69,Factual,¿En qué país europeo se celebraron elecciones a principios de julio de 2024 en las que los conservadores sufrieron una derrota histórica?,En el Reino Unido.
+70,Factual,¿Qué política se convirtió en la primera mujer en encabezar el Ministerio de Economía en la historia del Reino Unido al formarse el nuevo Gobierno en 2024?,Rachel Reeves.
+71,Factual,¿Quién se convirtió en el nuevo primer ministro del Reino Unido tras la victoria del Partido Laborista en julio de 2024?,Keir Starmer.
+72,Factual,¿Qué nombre reciben las esperadas gafas de realidad mixta lanzadas por la empresa Apple?,Apple Vision Pro.
+73,Factual,¿Cuál fue el precio oficial de salida al mercado de las gafas Apple Vision Pro en dólares?,3.499 dólares.
+74,Inferencia,¿Qué caracteristica tiene el nuevo modelo de Apple Vision Pro para poder conectarlas a los Mac?,Una conexión física mediante cable.
+75,Factual,¿En qué mes y año lanzó Apple al mercado estadounidense su primer dispositivo de gafas Vision Pro?,En febrero de 2024.
+76,Factual,¿Qué empresa tecnológica es la creadora y fabricante de las populares gafas de realidad mixta llamadas Vision Pro?,Apple.
+77,Factual,¿En qué fecha exacta se produjo el gran eclipse solar total que oscureció Norteamérica en 2024?,El 8 de abril de 2024.
+78,Factual,¿En qué tres países del continente americano se pudo observar la fase de totalidad del eclipse solar de abril de 2024?,"México, Estados Unidos y Canadá."
+79,Factual,"Según las noticias de abril de 2024, ¿qué fenómeno astronómico oscureció parte de Norteamérica atrayendo el gran interés de la ciencia?",Un eclipse solar total.
+80,Inferencia,¿En qué región concreta del continente americano se pudo aprovechar científicamente y de forma óptima el gran eclipse solar del 8 de abril de 2024?,En América del Norte (Norteamérica).
