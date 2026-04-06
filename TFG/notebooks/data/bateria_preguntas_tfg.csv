@@ -79,3 +79,143 @@ id,tipo,pregunta,respuesta_esperada
 78,Factual,¿En qué tres países del continente americano se pudo observar la fase de totalidad del eclipse solar de abril de 2024?,"México, Estados Unidos y Canadá."
 79,Factual,"Según las noticias de abril de 2024, ¿qué fenómeno astronómico oscureció parte de Norteamérica atrayendo el gran interés de la ciencia?",Un eclipse solar total.
 80,Inferencia,¿En qué región concreta del continente americano se pudo aprovechar científicamente y de forma óptima el gran eclipse solar del 8 de abril de 2024?,En América del Norte (Norteamérica).
+81,Factual,¿En qué fecha exacta se lanzó sin tripulación la misión Artemis I de la NASA?,El 16 de noviembre de 2022.
+82,Factual,¿Para qué mes y año está previsto ahora el lanzamiento de la misión Artemis II tras su aplazamiento?,Para abril de 2026.
+83,Factual,¿Qué modelo de trajes espaciales usarán los astronautas de la misión Artemis III en la superficie lunar?,Los trajes AxEMU.
+84,Factual,¿En qué estado de Estados Unidos se encuentra el Centro Marshall donde los ingenieros de la NASA han realizado simulaciones acústicas?,En Alabama.
+85,Factual,"Según la NASA, ¿dónde caerá exactamente la nave Orión al regresar a la Tierra tras la misión Artemis II?","En el Pacífico oriental, cerca de la costa de la ciudad de San Diego."
+86,Factual,"Según la consultora Drewry, ¿qué porcentaje exacto se elevó el flete de transporte marítimo entre Shanghái y Róterdam de enero a junio de 2024?",Un 233%.
+87,Inferencia,"Debido al desvío de barcos por el Cabo de Buena Esperanza, ¿cuántas millas náuticas se incrementa el trayecto entre Shanghái y Génova?",4.878 millas.
+88,Factual,¿Cuál fue la única de las 10 principales navieras mundiales que registró pérdidas durante el inicio de la crisis del Mar Rojo en 2024?,Maersk.
+89,Factual,"De acuerdo con el Banco de España, ¿cuál fue el porcentaje de retroceso de las ventas minoristas en la zona euro durante el año 2023?",Un 1% (un punto porcentual).
+90,Factual,¿Cuánto tiempo duró el atasco provocado por el megabuque Ever Given en el Canal de Suez en el año 2021?,Seis días.
+91,Factual,¿Cuál fue el índice de precios al consumidor (IPC) exacto registrado en Argentina durante el mes de diciembre de 2023?,"Un 25,5%."
+92,Factual,"Según el INDEC, ¿cuál fue la cifra oficial de inflación en Argentina correspondiente al mes de diciembre de 2024?","Un 2,7%."
+93,Factual,¿A qué porcentaje de la población argentina alcanzó la pobreza durante el primer semestre de 2024?,"Al 52,9%."
+94,Factual,"Según la política económica de Javier Milei, ¿a qué porcentaje mensual se mantuvo el ritmo de devaluación del peso durante 2024 para frenar la inflación?",A un ritmo del 2% mensual.
+95,Factual,¿A cuánto asciende la indemnización (en dólares) que la jueza Loretta Preska sentenció que Argentina debe pagar por la nacionalización de YPF?,16.099 millones de dólares.
+96,Factual,¿Cuál es el nombre del gas inerte y del elemento radiactivo de vida corta que se producen como residuos en el proceso de fusión nuclear?,Helio y tritio.
+97,Factual,"Según los datos del Laboratorio Nacional Lawrence Livermore de 2022, ¿cuál fue la producción de energía obtenida mediante fusión nuclear medida en megajulios (MJ)?","Superior a 3,5 MJ."
+98,Factual,¿Qué organismo o laboratorio logró por primera vez generar más energía mediante fusión nuclear de la necesaria para llevarla a cabo?,El Laboratorio Nacional Lawrence Livermore (LLNL).
+99,Factual,"Según la Agencia Internacional de la Energía (AIE), ¿cuál será la producción eléctrica generada por reactores nucleares en el mundo durante 2025?",2.900 TWh.
+100,Trampa,"¿Qué porcentaje del suministro mundial de uranio enriquecido procede de Kazajistán, según los datos de la AIE en 2025?","Ninguno, Kazajistán extrae el uranio (43%), pero el uranio enriquecido procede de Rusia (40%)."
+101,Factual,¿Qué dos compuestos químicos detectó el telescopio James Webb en la atmósfera del exoplaneta K2-18 b?,Dimetil sulfuro (DMS) y dimetil disulfuro (DMDS).
+102,Factual,¿Cómo se ha bautizado a la cadena masiva de al menos 20 galaxias descubierta por el telescopio James Webb?,Cosmic vine.
+103,Inferencia,"Según el tamaño de la Vía Láctea detallado en la noticia, ¿cuántas veces es más ancha la estructura 'Cosmic vine' en comparación a nuestra galaxia?","Unas 6,5 veces más ancha (la Vía Láctea tiene 100.000 años luz de ancho y Cosmic vine 650.000)."
+104,Factual,¿Cuál era el diámetro del espejo primario del Telescopio Espacial Hubble en comparación con los 6.5 metros del James Webb?,"2,4 metros."
+105,Trampa,¿En qué año lanzó el científico James Webb personalmente la primera sonda interplanetaria a Marte?,No tengo información suficiente en mis archivos
+106,Factual,¿Qué observatorio espacial detectó por primera vez el potente resplandor de rayos gamma GRB 250314A en marzo?,El observatorio espacial SVOM (un proyecto conjunto entre Francia y China).
+107,Factual,¿Cuántos años después del Big Bang ocurrió aproximadamente la explosión de la supernova captada por el Telescopio Muy Grande (VLT)?,Aproximadamente 730 millones de años después del Big Bang.
+108,Factual,"En su discurso desde el balcón del Palacio Nacional, ¿qué porcentaje exacto de los votos afirmó Nayib Bukele haber logrado en las elecciones presidenciales?",Más del 85% de los votos.
+109,Factual,"Antes de fundar el movimiento Nuevas Ideas, ¿de qué partido político provocó Nayib Bukele su propia expulsión en el año 2017?",Del Frente Farabundo Martí para la Liberación Nacional (FMLN).
+110,Factual,"Según los datos de la Policía Nacional Civil (PNC), ¿cuántos días consecutivos sin asesinatos se registraban en El Salvador el día de la jornada electoral?",El décimo séptimo (17) día consecutivo sin asesinatos.
+111,Factual,¿Cuál es la capacidad máxima de reclusos que tiene el Centro de Confinamiento del Terrorismo creado en El Salvador?,Tiene capacidad para 40.000 pandilleros.
+112,Trampa,¿Qué presidente de Irán tildó de fraude electoral la reelección de Nayib Bukele?,No tengo información suficiente en mis archivos.
+113,Inferencia,"Considerando las declaraciones de Katrin Deschauer, ¿reconoció Alemania oficialmente los resultados finales de las elecciones salvadoreñas el mismo lunes?","No, Alemania fue cauta porque el conteo oficial del Tribunal Supremo Electoral aún no había terminado."
+114,Factual,¿Para combatir qué dos enfermedades se aprobó en Reino Unido y Estados Unidos la primera terapia génica basada en el método CRISPR/Cas9?,La anemia de células falciformes y la beta talasemia.
+115,Factual,¿De qué parte específica del cuerpo humano se extraen habitualmente las células madre mediante una punción en la cresta ilíaca?,De la médula ósea (en la cadera).
+116,Factual,¿Qué dos científicos recibieron el Premio Nobel por sus descubrimientos en torno a la reprogramación celular?,Yamanaka y Guston.
+117,Factual,"Según las recomendaciones dermatológicas citadas en la noticia, ¿qué factor de protección solar mínimo (SPF) deben utilizar las personas de piel clara?",Factor 50 SPF.
+118,Inferencia,"Si a un paciente le clasifican un carcinoma utilizando el sistema TNM y se centran en evaluar la letra 'M', ¿qué están buscando médicamente?",La existencia o no de metástasis.
+119,Factual,"Según el descubrimiento de dos tipos de células madre responsables de formar las raíces dentales, ¿qué tipo de piezas bucales podrían hacer crecer los nuevos tratamientos?",Dientes naturales.
+120,Factual,¿Cuántos metros de diámetro tendrá el túnel submarino proyectado para conectar Génova Oeste con Génova Este?,16 metros de diámetro.
+121,Factual,¿En qué año está previsto que finalice la construcción del gran túnel submarino de Génova financiado por Autostrade per l'Italia?,En el año 2029.
+122,Factual,¿Qué ciudad marroquí y qué ciudad española conectaría el tren que circulará por el futuro túnel submarino del Estrecho de Gibraltar?,Casablanca y Madrid.
+123,Factual,¿Cómo se llama la fragata que Alemania envió a Copenhague para proteger la doble cumbre de la UE frente a la amenaza de drones?,La fragata Hamburg.
+124,Inferencia,"Al ser avistados submarinos rusos en el Mar Báltico, ¿por qué los barcos de la defensa danesa justifican seguirlos como una práctica 'normal'?",Se hace con fines disuasorios y de vigilancia porque las embarcaciones rusas no pertenecen a la OTAN.
+125,Trampa,¿Qué carguero ruso dañó presuntamente dos cables submarinos de telecomunicaciones en el Báltico en noviembre de 2024?,No tengo información suficiente en mis archivos.
+126,Factual,"En la cumbre COP29, ¿qué cantidad de dinero se aprobó movilizar para el año 2035 destinada a países en desarrollo?",300.000 millones de dólares.
+127,Factual,"Según las estimaciones de los expertos mencionadas en la cumbre de Brasil, ¿a qué cifra ascienden las verdaderas necesidades financieras climáticas anuales exigidas para 2035?","A 1,3 billones de dólares."
+128,Factual,¿Cómo se llama el mecanismo de la Unión Europea que impondrá un cargo a las importaciones de bienes con altas emisiones de carbono a partir del 1 de enero de 2016?,Mecanismo de Ajuste en Frontera por Carbono.
+129,Inferencia,"Teniendo en cuenta la postura de China en la cumbre, ¿se mostró este país abierto a debatir el acortamiento de los plazos para presentar sus planes de acción climática (NDC)?","No, China se ha mostrado firme en que no debería haber debate sobre estos planes."
+130,Factual,¿En qué ciudad de la Amazonia brasileña se celebró la conferencia de la ONU sobre el clima conocida como COP30?,En la ciudad de Belém.
+131,Trampa,¿Qué nuevos compromisos de financiación aportó la delegación de Estados Unidos durante su intervención en la cumbre de Belém?,"Ninguno, ya que Estados Unidos, a pesar de ser el mayor emisor histórico, estuvo ausente en la cumbre de Belém."
+132,Factual,"Según un nuevo análisis publicado por la Organización Mundial de la Salud (OMS), ¿cuál es la relación probada entre las vacunas y el autismo?",Se confirma que no existe ninguna relación entre las vacunas y el autismo.
+133,Factual,¿Qué compañía farmacéutica japonesa desarrolló la primera vacuna contra la viruela del mono aprobada por la OMS para niños?,KM Biologics.
+134,Factual,¿A partir de qué edad puede utilizarse la vacuna contra la viruela del mono fabricada por KM Biologics?,A partir del primer año de edad.
+135,Factual,¿Cómo se llama la alianza que facilita las inmunizaciones en países en desarrollo y que precisa la aprobación de la OMS para llevar la vacuna a la República Democrática del Congo?,GAVI.
+136,Factual,¿Cuántos pacientes espera tener implantados el Instituto Chino de Investigación Cerebral (CIBR) con el chip Beinao No. 1 para finales de año?,Trece personas.
+137,Factual,"¿Cuál es la empresa tecnológica que ha desarrollado el chip visual Prima, de dos milímetros cuadrados, plantando cara a Neuralink?",Science Corporation.
+138,Factual,¿en qué año fundó Elon Musk la compañía Neuralink?,En 2016.
+139,Factual,¿Cuál es el peso exacto del implante biotecnológico desarrollado por Neuralink?,Cuatro gramos.
+140,Factual,¿Cuáles son las previsiones de facturación y número de pacientes implantados por curso que Neuralink espera alcanzar en el año 2031?,1.000 millones de facturación y 20.000 pacientes.
+141,Factual,¿Cómo se llama el primer paciente humano que recibió el implante cerebral de Neuralink y que quedó tetrapléjico en 2016?,Noland Arbaugh.
+142,Factual,¿Qué significan las siglas del ensayo PRIME en el que participa el primer paciente de Neuralink?,Precise Robotically Implanted Brain-Computer Interface.
+143,Trampa,¿En qué hospital exacto de la ciudad de Nueva York se le implantó el chip al paciente Noland Arbaugh?,No tengo información suficiente en mis archivos.
+144,Factual,"Según el artículo sobre el desafío de Colombia frente a España, ¿a finales de qué siglo se hundió el navío San José?",A finales del siglo XVII.
+145,Factual,"Según la historia del buque, ¿qué día exacto fue hundido el galeón San José por una flota de corsarios ingleses?",El 8 de junio de 1708.
+146,Factual,¿Cuántas monedas de oro y plata recogidas en Portobelo (Panamá) llevaba aproximadamente el galeón en su interior?,Cerca de 11 millones de monedas de ocho escudos en oro y plata.
+147,Factual,¿Qué palabra concreta figura inscrita en el cañón de artillería extraído del galeón San José?,"La palabra ""Sevilla""."
+148,Factual,¿Qué dos personas elaboraron una escultura de chocolate del galeón San José sostenido por un pulpo gigante?,El chef pastelero Juan Arellano y Andrea Torres.
+149,Trampa,¿Cuál era el nombre del capitán corsario inglés que dio la orden de hundir personalmente el barco en 1708?,No tengo información suficiente en mis archivos.
+150,Inferencia,¿Por qué motivo acudirá una delegación del pueblo Qhara Qhara como testigo a las operaciones submarinas en el galeón San José?,Para asegurarse de que el gobierno colombiano no se apropie bienes de los pueblos originarios.
+151,Factual,¿A cuántos campos de fútbol equivale la superficie del gigantesco vertedero de Ghazipur situado en la India?,A 35 campos de fútbol.
+152,Factual,¿Cuál fue la concentración media exacta de microplásticos (MP) por litro detectada en el agua embotellada de las cinco marcas españolas analizadas?,"0,7 MP por litro."
+153,Factual,¿En qué revista científica se publicaron los resultados de la segunda parte del estudio centrada en el agua embotellada?,En la revista Scientific Reports.
+154,Factual,"Según las imágenes químicas del estudio peneano, ¿cuáles fueron los dos tipos de microplásticos más prevalentes encontrados en las muestras?",El tereftalato de polietileno (PET) y el polipropileno (PP).
+155,Factual,"Según el estudio publicado en mayo por el toxicólogo Matthew J. Campen, ¿cuántos testículos de perro se analizaron para compararlos con los 23 de humanos?",47 testículos de perro.
+156,Trampa,¿Qué marca específica de agua embotellada fue la que dio un resultado más alto en toxinas en la investigación del toxicólogo Campen?,No tengo información suficiente en mis archivos.
+157,Trampa,¿En qué año exacto ha aprobado California la ley que prohibirá enviar chatarra electrónica de segunda mano a países de África?,No tengo información suficiente en mis archivos.
+158,Inferencia,"Basándonos en las cifras del estudio de Environplanet, ¿qué tipo de agua tiene una menor cantidad de partículas no plásticas de origen artificial (PANP) por litro: la de grifo o la embotellada?","El agua de grifo (presenta 0,0322 PANP/litro frente a los 1,70 del agua embotellada)."
+159,Factual,¿Cómo se llama la versión de inteligencia artificial de Meta que sí llegará a la Unión Europea porque solo es compatible con texto?,Llama 3.
+160,Factual,¿En cuántos idiomas estará disponible el asistente Meta AI en su versión europea enfocada únicamente en la generación de texto?,En seis idiomas.
+161,Factual,¿Cuánto dinero planea invertir la empresa Meta este año para hacer de la inteligencia artificial una prioridad estratégica?,Entre 60.000 y 65.000 millones de dólares.
+162,Trampa,¿Qué cuantía económica tiene la multa que la Comisión Europea impuso a Meta en mayo por el uso de algoritmos adictivos?,No tengo información suficiente en mis archivos.
+163,Inferencia,"Atendiendo a las características de la versión europea de Meta AI, ¿utilizó la empresa los datos de los internautas europeos para entrenar a su asistente virtual?","No, Meta AI no se entrenó con datos de usuarios europeos."
+164,Factual,"En el lugar de aterrizaje del módulo Chandrayaan-3, ¿qué temperatura máxima se alcanzó en una pendiente orientada hacia el Sol con un ángulo de 6 grados?",Alcanzó un máximo de 82 grados.
+165,Factual,¿Con qué instrumento tecnológico realizó el vehículo Pragyan sus 23 mediciones a lo largo de 103 metros en la superficie lunar?,Utilizando su espectrómetro de rayos X de partículas alfa.
+166,Factual,¿A qué distancia exacta de su ubicación deseada confirmó la NASA que había aterrizado de manera accidentada la sonda Athena?,A 400 metros de distancia.
+167,Factual,¿En qué fecha exacta logró Japón el alunizaje exitoso de su nave Smart Lander con su módulo inteligente SLIM?,El 20 de enero de 2024.
+168,Trampa,¿Cuál era el nombre del astronauta que controló de manera remota el aterrizaje de la sonda Athena desde el centro de control en Houston?,No tengo información suficiente en mis archivos.
+169,Trampa,¿Qué cantidad de kilos de roca lunar trajo a la Tierra la misión espacial china Chang'e 3 tras su alunizaje en el año 2013?,No tengo información suficiente en mis archivos.
+170,Factual,"¿En qué fecha exacta entra en funcionamiento el AVE que completa el recorrido entre Madrid, las capitales gallegas y Asturias?","A partir de este próximo martes, 21 de mayo."
+171,Factual,¿Qué cantidad económica en indemnizaciones reclama Renfe a la empresa Talgo debido a los tres años y medio de retraso en la entrega de los trenes S-106?,166 millones de euros.
+172,Inferencia,"Gracias a la puesta en marcha de los nuevos convoyes Avril, ¿cuántos minutos de viaje se ahorrarán los pasajeros que realicen el trayecto en alta velocidad entre Oviedo y Madrid?",Se reducirá el tiempo de viaje en 12 minutos.
+173,Trampa,¿A qué velocidad máxima exacta circuló el tren con destino a Vigo mientras atravesaba los montes galaicos tras salir de Zamora?,No tengo información suficiente en mis archivos.
+174,Factual,¿Cuántos trenes totales se incluían en el contrato que Renfe adjudicó a Talgo por 1.281 millones de euros en el año 2016?,30 trenes S106.
+175,Factual,"Según las declaraciones del ministro Mario Marcel, ¿cuántas empresas en total presentaron propuestas al Gobierno de Chile para explotar los 26 salares disponibles?",54 empresas.
+176,Factual,¿En qué mes y año comenzará a operar comercialmente la nueva sociedad creada por Codelco y SQM para explotar el litio en el salar de Atacama?,En enero de 2025.
+177,Inferencia,"Para garantizar el control del Estado en la nueva asociación público-privada entre Codelco y SQM, ¿qué participación accionarial mantendrá la empresa estatal?",Tendrá la mayoría de las acciones (el 50% más una).
+178,Factual,"Durante el partido de clasificación disputado en Tiflis frente a Georgia, ¿qué jugador de la selección española anotó el primer gol de penalti en el minuto 11?",Mikel Oyarzabal.
+179,Trampa,¿Cuál fue el porcentaje exacto de posesión de balón que tuvo la selección española en la segunda parte del partido contra Georgia?,No tengo información suficiente en mis archivos.
+180,Trampa,¿A qué precio exacto vendió la compañía SQM la tonelada de litio a China durante el último trimestre comercial de 2024?,No tengo información suficiente en mis archivos.
+181,Factual,¿En qué ciudad española tiene su sede la Agencia Española de Supervisión de la Inteligencia Artificial (Aesia)?,En La Coruña.
+182,Factual,¿Cuántas entradas tiene la clasificación europea de competencias conocida como ESCO?,Más de 13.000 entradas.
+183,Inferencia,"Según la información aportada por la Xunta, ¿cuántos puestos de trabajo calificados como de 'urgente cobertura' hay en Galicia que no se logran cubrir?",Unos 15.000 puestos.
+184,Trampa,¿Qué gran empresa tecnológica estadounidense ha desarrollado la herramienta de inteligencia artificial EMi para la Xunta de Galicia?,No tengo información suficiente en mis archivos.
+185,Factual,¿Qué empresa utiliza en California vehículos sin conductor para entregar suministros médicos?,La empresa Nuro.
+186,Factual,¿En qué ciudad de Colombia se celebra el VIII Congreso de Editores de Europa y América Latina?,En Cartagena de Indias.
+187,Factual,¿Qué tratamiento médico específico procedente de cadáveres generó casos de transmisión de alzhéimer entre personas?,Un tratamiento con hormona del crecimiento.
+188,Factual,¿Cómo se llama el fármaco oral en fase de estudio que busca prevenir el Alzheimer bloqueando los oligómeros amiloides?,ALZ-801.
+189,Factual,¿Qué herramienta de inteligencia artificial utiliza Google para acelerar el estudio de proteínas relacionadas con el Alzheimer?,AlphaFold.
+190,Factual,¿Quién es el autor colombiano del libro de poesía 'Grietas de la luz' (2024) que honra la memoria de sus abuelas?,Federico Díaz Granados.
+191,Trampa,¿En qué año exacto descubrió Google la cura definitiva para el Alzheimer con su IA AlphaFold?,No tengo información suficiente en mis archivos.
+192,Factual,¿Cuál fue la cifra exacta de recaudación de la tasa turística en la comarca del Maresme durante el año 2024?,4.662.602 euros.
+193,Factual,"Según el informe del Maresme, ¿cuál es el porcentaje de hombres que integran el perfil del turista en la comarca?","El 64,1%."
+194,Factual,"Según las previsiones del Ministerio de Industria y Turismo en 2023, ¿cuántos millones de euros de gasto generaron los turistas internacionales en España?",Más de 108.000 millones de euros.
+195,Inferencia,"De acuerdo con los datos de Mesa del Turismo, ¿cuántos turistas mexicanos aproximadamente visitaron España el año pasado?",Más de un millón de mexicanos.
+196,Trampa,¿Qué porcentaje exacto de impuestos aplicará Donald Trump a los turistas españoles que viajen a Nueva York?,No tengo información suficiente en mis archivos.
+197,Factual,¿Qué porcentaje cayeron las ventas de la marca Tesla en España durante el mes de octubre?,Un 31%.
+198,Factual,¿Cuáles son los nombres de los dos gigantes chinos que concentran más del 50% del suministro global de baterías para coches eléctricos?,CATL y BYD.
+199,Inferencia,¿Cómo se denomina comercialmente la batería de producción propia que fabrica la empresa automovilística BYD a través de su filial FinDreams Battery?,Blade Battery.
+200,Factual,"Según un nuevo estudio, ¿a qué porcentaje anual ha bajado la tasa de degradación de las baterías de coches eléctricos en los últimos cinco años?","Ha bajado al 1,8% anual."
+201,Trampa,¿Cuántas gigafactorías de baterías tiene actualmente operativas la marca BYD en territorio español?,No tengo información suficiente en mis archivos.
+202,Factual,¿Cuántas hectáreas de olivar dedica la Cooperativa Olivarera de Los Pedroches (Olipe) al cultivo biodinámico?,300 hectáreas.
+203,Inferencia,"De acuerdo con la reforma presupuestaria que se debate en las instituciones comunitarias, ¿qué porcentaje de reducción de fondos podrían sufrir las ayudas de la Política Agraria Común (PAC)?",Una reducción del 20%.
+204,Factual,¿Cuántos puntos recogía el pacto que firmaron los agricultores de la plataforma Gremi de la Pagesia con el departament d’Agricultura de Cataluña?,19 puntos.
+205,Factual,"¿Cuántos años llevaba en su cargo el coordinador de Unió de Pagesos, Joan Caball, antes de certificarse su relevo?",25 años.
+206,Factual,¿Quién es el autor del libro 'El juego del dinero' citado en el artículo sobre la riqueza y la clase media?,Gary Stevenson.
+207,Trampa,¿Qué plaga específica de insectos devoradores de cultivos acordaron combatir en el pacto de 19 puntos firmado en Cataluña?,No tengo información suficiente en mis archivos.
+208,Factual,"Según el informe de ISACA en 2024, ¿qué porcentaje de profesionales de ciberseguridad afirma que no cuentan con el presupuesto necesario?",El 52%.
+209,Factual,¿Qué cantidad económica va a inyectar Google.org a la Universidad de Málaga para su programa de seminarios de ciberseguridad?,Un millón de dólares.
+210,Factual,¿En qué año fundó el empresario israelí Nir Zuk la firma de ciberseguridad Palo Alto Networks?,En el año 2005.
+211,Factual,"Según el informe del Observatorio de Digitalización de GoDaddy 2023, ¿qué porcentaje de pymes españolas han sido víctimas de algún ciberataque?",El 60% de las empresas españolas.
+212,Inferencia,¿Para qué sirve específicamente la solución tecnológica HP Sure Recover mencionada en el informe de protección para pymes?,Para ayudar a restaurar rápidamente la funcionalidad del sitio web en caso de ataques o caídas.
+213,Trampa,¿Qué grupo de hackers ruso reivindicó el último ataque a la infraestructura de Red Eléctrica?,No tengo información suficiente en mis archivos.
+214,Factual,"Según el estudio de la Asociación Estadounidense del Corazón, ¿cuántas horas de sueño por noche necesita la mayoría de los adultos?",Entre 7 y 9 horas.
+215,Factual,"En el estudio de la Universidad Tecnológica de Sidney sobre la dieta mediterránea, ¿cuántos hombres participaron y de qué rango de edad?",Participaron 71 hombres de edades comprendidas entre 18 y 25 años.
+216,Inferencia,"Según los investigadores, ¿a través de qué vía o nervio específico se comunican las bacterias del tracto intestinal con el cerebro?",A través del nervio vago.
+217,Factual,¿Cuántos participantes se incluyeron en el análisis de datos del estudio SOL-INCA-MRI enfocado en la materia blanca cerebral?,Más de 2.774 participantes.
+218,Inferencia,"De todos los componentes de la dieta mediterránea, ¿qué dos alimentos específicos se asociaban de manera más estrecha con las características deseables de la materia blanca cerebral?",El pescado y los cereales integrales.
+219,Factual,¿En qué revista científica se publicó la nueva declaración de la Asociación Estadounidense del Corazón sobre el sueño y el cardiometabolismo?,En la revista 'Circulation: Cardiovascular Quality and Outcomes'.
+220,Trampa,¿En qué hospital español se descubrió que la dieta mediterránea cura clínicamente la depresión profunda en dos semanas?,No tengo información suficiente en mis archivos.
