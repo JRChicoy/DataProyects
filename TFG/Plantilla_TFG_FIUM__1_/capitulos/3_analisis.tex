@@ -1,0 +1,42 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plantilla TFG/TFM
+% Universidad de Murcia. Facultad de Informática
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Análisis de objetivos y metodología}
+
+En este capítulo se detallan los pilares fundamentales sobre los que se asienta el proyecto. Se definen los objetivos que guían la investigación y se describe la metodología sistemática empleada para el diseño, implementación y validación del sistema de verificación de información basado en arquitecturas RAG.
+
+\section{Objetivos Generales}
+
+La proliferación de desinformación en el ecosistema digital exige herramientas de verificación rápidas y precisas. Los Modelos de Lenguaje de Gran Escala (LLMs) han demostrado capacidades sorprendentes, pero su tendencia a la ``alucinación'' ---la generación de datos plausibles pero falsos--- limita su utilidad en tareas de \textit{fact-checking}. Este Trabajo Fin de Grado se centra en el diseño y evaluación de un sistema de Generación Aumentada por Recuperación (RAG) capaz de anclar las respuestas de un modelo de lenguaje en un corpus de noticias veraces, minimizando así la invención de datos.
+
+Para alcanzar esta meta, el proyecto se desglosa en cinco objetivos específicos:
+
+\begin{itemize}
+    \item \textbf{Implementar una infraestructura de recuperación robusta:} Desplegar un motor de búsqueda basado en Elasticsearch para gestionar y consultar de forma eficiente un corpus de aproximadamente 490.000 noticias.
+    \item \textbf{Comparar estrategias de búsqueda léxica y semántica:} Evaluar el rendimiento del algoritmo tradicional BM25 frente a representaciones vectoriales densas mediante el modelo BGE-M3, identificando cuál responde correctamente a mas preguntas sobre el conjunto de noticias.
+    \item \textbf{Integrar modelos de lenguaje de distinta escala:} Contrastar el desempeño de modelos locales compactos (Small Language Models - Phi-3) frente a modelos de altas prestaciones accesibles vía API (Llama 3.3 y Qwen 3), comparando la cantidad de respuestas que responden correctamente y analizando ejemplos puntuales de preguntas de diferentes tipos.
+    \item \textbf{Establecer un marco de evaluación automatizado:} Diseñar una metodología de auditoría basada en un ``LLM-as-a-judge'' de parámetros masivos (120B) que permita automatizar en cierta parte la validación de respuestas sin intervención humana constante.
+    \item \textbf{Validar el sistema a gran escala:} Someter la arquitectura final (sistema de recuperacion con mejor desempeño \& modelo de lenguaje con mejor desempeño) a una batería de 220 preguntas complejas (\textit{Ground Truth}) para obtener métricas de rendimiento con respecto a los otros casos y analizar mejorías.
+\end{itemize}
+
+De estos objetivos se desprende la cuestión vertebral de la investigación:
+
+\begin{quote}
+    \textit{¿En qué medida la implementación de una arquitectura RAG permite mitigar las alucinaciones en los modelos de lenguaje, y cómo influye la selección del motor de recuperación y la escala del generador en la veracidad de las respuestas obtenidas?}
+\end{quote}
+
+\section{Metodología}
+
+La metodología del proyecto se consolidó finalmente en siete fases secuenciales, abarcando todo el ciclo de vida desde el procesamiento de los datos hasta la obtención de las métricas. A continuación se describe este flujo de trabajo:
+
+\begin{enumerate}
+    \item \textbf{Ingesta y normalización del corpus (ETL):} Extracción y limpieza de los datos de noticias para su indexación en Elasticsearch. En esta fase se define la estructura de los documentos para facilitar recuperaciones posteriores.
+    \item \textbf{Desarrollo del motor de recuperación (Retrieval):} Implementación paralela de la búsqueda por palabras clave (BM25) y la búsqueda vectorial (kNN), validando la relevancia de los documentos recuperados frente a consultas de prueba.
+    \item \textbf{Despliegue e integración del flujo RAG:} Configuración del modelo local (Phi-3) y desarrollo de la lógica de conexión entre el recuperador y el generador. En esta etapa se establecen los protocolos de comunicación y los \textit{system prompts} para restringir la respuesta al contexto.
+    \item \textbf{Diseño del marco de evaluación automatizada (LLM-as-a-Judge):} Implementación de un tribunal basado en un modelo de parámetros masivos (120B) y ejecución de una prueba piloto de 80 preguntas para validar la consistencia del criterio de evaluación binaria.
+    \item \textbf{Ampliación del marco experimental y selección del generador:} Incorporación de un segundo modelo de lenguaje avanzado (Qwen 3 32B) para evaluar su desempeño frente a Llama 3 y Phi-3. Esta etapa tiene como fin disponer de una comparativa entre diversas arquitecturas, permitiendo identificar el motor de razonamiento óptimo para su integración en la arquitectura RAG definitiva
+    \item \textbf{Ejecución masiva y control de errores:} Procesamiento del \textit{dataset} completo de 220 preguntas. Se implementan puntos de control debido al elevado tiempo de ejecución y la limitacion de recursos computacionales en ciertos momentos.
+    \item \textbf{Análisis comparativo y síntesis del sistema óptimo:} Consolidación de resultados en una visualización del conjunto de casos, identificando los componentes ganadores para el ensamblaje y validación de la arquitectura RAG final.
+\end{enumerate}

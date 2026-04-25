@@ -1,0 +1,120 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plantilla TFG/TFM
+% Universidad de Murcia. Facultad de Informática
+% Realizado por: José Manuel Requena Plens
+% Modificado: Pablo José Rocamora Zamora
+% Contacto: pablojoserocamora@gmail.com
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\chapter{Diseño y resolución del trabajo realizado}
+
+\section{Diseño Experimental}
+En esta sección se describen los componentes técnicos, la infraestructura distribuida y los protocolos de procesamiento de datos que permitieron la construcción y validación del sistema RAG.
+
+\subsection{Entorno de Experimentación y Herramientas}
+
+Para el desarrollo del proyecto se ha diseñado una arquitectura distribuida que permite separar el almacenamiento masivo de datos del procesamiento intensivo de modelos de lenguaje. El entorno se compone de los siguientes elementos:
+
+\begin{itemize}
+    \item \textbf{Infraestructura de Servidores:} Se ha trabajado con dos nodos remotos diferenciados, distribuyendo las tareas según los requisitos de hardware de cada fase:
+    \begin{itemize}
+        \item \textit{Nodo de Almacenamiento y Cómputo CPU (Valencia):} Servidor destinado al alojamiento del corpus original de noticias y al despliegue del motor Elasticsearch. En este nodo se ejecutaron íntegramente las fases de ingesta, normalización de datos (ETL) y las pruebas de recuperación léxica (BM25), aprovechando su capacidad de almacenamiento y recursos de procesamiento general.
+        \item \textit{Nodo de Cómputo GPU:} Servidor equipado con una GPU \textbf{NVIDIA RTX 4090}. Este nodo se reservó exclusivamente para las tareas de alta carga computacional que requerían aceleración por hardware, tales como la generación de \textit{embeddings} vectoriales con el modelo BGE-M3 y la inferencia de los modelos de lenguaje locales (\textit{Phi-3}).
+    \end{itemize}
+    \item \textbf{Conectividad y Flujo de Datos:} Dado que el corpus de noticias se encontraba físicamente en el servidor de almacenamiento y no en el de cómputo, se implementaron \textbf{túneles SSH} para interconectar ambos sistemas. Esta configuración permitió que el entorno de desarrollo local (con acceso directo a la GPU) pudiera realizar consultas e indexar la información del servidor remoto de forma segura y transparente.
+    \item \textbf{Software y Entorno de Ejecución:} El desarrollo se ha realizado íntegramente en \textbf{Python 3.12}, gestionado a través de un entorno virtual de Conda denominado \texttt{environment}. Como interfaz de desarrollo se han empleado \textbf{Jupyter Notebooks}, permitiendo una ejecución modular y una documentación paso a paso de cada fase. Las herramientas y librerías críticas incluyen:
+    \begin{itemize}
+        \item \textit{Elasticsearch (v8.12.1):} Empleado como motor de búsqueda para la gestión de índices léxicos y vectoriales. Para la comunicación entre el código y el motor se ha utilizado la librería \texttt{elasticsearch-py}.
+        \item \textit{PyTorch y Transformers:} Librerías fundamentales para la orquestación y ejecución de los modelos de inteligencia artificial, específicamente el modelo de lenguaje Phi-3 y el generador de \textit{embeddings} BGE-M3.
+        \item \textit{Pandas:} Utilizada para el tratamiento, limpieza y estructuración de los datos en formato tabular antes de su indexación.
+        \item \textit{Matplotlib y Seaborn:} Empleadas para la generación de las visualizaciones y gráficos estadísticos de rendimiento.
+    \end{itemize}
+\end{itemize}
+
+\subsection{El Corpus de Noticias y Proceso ETL}
+
+El proceso de extracción, transformación y carga (ETL) resultó fundamental para construir una base de conocimiento fiable. De un volumen inicial de 804.083 registros, el sistema fue refinado mediante lógica condicional para garantizar que solo la información con peso factual fuera indexada.
+
+\begin{itemize}
+    \item \textbf{Auditoría de Datos y Filtrado Estructural:} Mediante un análisis exploratorio (Notebook 01), se determinó que la información de valor residía mayoritariamente en objetos \textit{JSON-LD} (62,5\% de la muestra). La auditoría reveló que el campo \texttt{articleBody} en la raíz del JSON estaba sistemáticamente vacío (0 registros), lo que permitió optimizar el extractor para ignorar niveles jerárquicos irrelevantes y centrarse exclusivamente en la arquitectura anidada del \textit{JsonLD}.
+    \item \textbf{Lógica de Extracción Jerárquica:} Se implementó un generador de acciones con prioridad de contenido. El sistema intenta extraer primero el campo \texttt{articleBody} (contenido estándar de la noticia). En caso de ausencia, se emplea \texttt{description} (asociado a contenidos multimedia como vídeos) como respaldo técnico. Esta estrategia asegura que documentos con información relevante, pero distinta estructura, no sean omitidos.
+    \item \textbf{Limpieza de Datos y Normalización:} Para evitar que el ruido visual afectara a la comprensión de los modelos de lenguaje, se aplicó una función de limpieza (\texttt{clean\_text}) que realiza la decodificación de entidades HTML (\textit{unescape}) y la eliminación de espacios en blanco redundantes. Los metadatos de título y fuente también fueron normalizados antes de su indexación en Elasticsearch mediante el \textit{spanish-analyzer}, un filtro que optimiza la búsqueda léxica convirtiendo el texto a minúsculas, eliminando palabras vacías (\textit{stopwords}) y extrayendo la raíz morfológica de los términos (\textit{stemming}).
+    \item \textbf{Descarte de Registros sin Valor Factual:} La auditoría previa identificó 30.860 noticias calificadas como ''vacíos totales'' (registros sin cuerpo ni descripción). Durante el proceso de ingesta masiva, estos documentos fueron filtrados proactivamente. Este descarte técnico fue esencial para consolidar un índice limpio de 490.956 éxitos, eliminando posibles fuentes de alucinación derivadas de documentos sin carga informativa.
+\end{itemize}
+
+A continuación, la Tabla~\ref{tab:estadisticas_corpus} resume las métricas finales obtenidas tras la ejecución del proceso ETL optimizado.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Variable de Control} & \textbf{Valor Final en Índice} \\ \midrule
+Total analizado (Dataset bruto) & 804.083 \\
+Noticias indexadas (Éxitos)     & 490.956 \\
+Registros descartados (Vacíos)  & 30.860 \\
+Analizador de texto             & Spanish Analyzer \\
+Campos por documento            & \textit{title, body, source, date, url} \\ \bottomrule
+\end{tabular}
+\caption{Estadísticas consolidadas del proceso ETL y auditoría de datos.}
+\label{tab:estadisticas_corpus}
+\end{table}
+
+\subsection{Estrategias de Representación y Recuperación}
+
+La eficacia de un sistema RAG depende críticamente de la capacidad del motor de búsqueda para localizar la información pertinente. En este proyecto se han implementado y contrastado dos paradigmas de recuperación diferenciados:
+
+\begin{itemize}
+    \item \textbf{Recuperación Léxica (BM25):} Implementada como \textit{baseline}, esta estrategia utiliza el algoritmo \textit{Best Matching 25}. Su funcionamiento se basa en la coincidencia exacta de términos y la importancia inversa del documento. Es especialmente eficaz para consultas que contienen nombres propios o fechas específicas, aunque presenta limitaciones ante sinónimos o variaciones lingüísticas.
+    \item \textbf{Recuperación Semántica (BGE-M3):} Basada en una arquitectura de representación densa, emplea el modelo de \textit{embeddings} \textbf{BAAI/bge-m3}. Este modelo transforma tanto las noticias como las consultas de los usuarios en vectores numéricos dentro de un \textbf{espacio latente de 1024 dimensiones}. La búsqueda se realiza mediante el algoritmo \textbf{kNN} (\textit{k-Nearest Neighbors}), calculando la similitud del coseno entre vectores para identificar documentos conceptualmente similares.
+\end{itemize}
+
+\subsubsection{Gestión de Contexto Integral: Ausencia de Fragmentación (\textit{No Chunking})}
+
+A diferencia de las arquitecturas RAG convencionales, que dividen los documentos en fragmentos menores (\textit{chunks}) para ajustarse a las limitaciones de contexto de los LLMs, en este trabajo se ha optado por una \textbf{estrategia de documento íntegro}. 
+
+Esta decisión de diseño se fundamenta en tres pilares técnicos extraídos del análisis del corpus:
+\begin{enumerate}
+    \item \textbf{Coherencia Semántica:} Las noticias del dataset presentan una estructura narrativa autocontenida. La fragmentación arbitraria podría separar entidades relacionadas o diluir el contexto temporal de los hechos, aumentando el riesgo de respuestas incompletas o descontextualizadas.
+    \item \textbf{Compatibilidad con la Ventana de Contexto:} El modelo Phi-3-mini-4k-instruct dispone de una ventana de contexto de 4.096 tokens. Esta capacidad permite la inserción del artículo completo dentro del \textit{prompt} enviado al sistema, lo que facilita el procesamiento de la noticia íntegra en una sola iteración.
+    \item \textbf{Precisión en la Recuperación:} Al indexar el documento completo, el motor de búsqueda (tanto BM25 como vectorial) dispone de la totalidad del léxico y la semántica de la noticia para calcular el \textit{score} de relevancia, evitando falsos positivos que podrían generarse con fragmentos aislados y carentes de contexto global.
+\end{enumerate}
+
+\subsubsection{Optimización del Hiperparámetro de Recuperación (Top-k)}
+
+Una de las decisiones de diseño más relevantes en la arquitectura del sistema fue la definición del volumen de contexto inyectado al generador. 
+
+Si bien en las fases iniciales de validación técnica se empleó una configuración de \textbf{$Top-k=1$} para maximizar la restricción, la auditoría de los resultados reveló que un único documento podía resultar insuficiente en casos de noticias similares o contextos complejos. En consecuencia, se optó por ampliar de forma sistemática el umbral a \textbf{$Top-k=2$}. 
+
+Esta configuración permite al sistema recuperar los dos documentos con mayor relevancia, proporcionando al modelo de lenguaje un margen de comparación y una base de evidencia más robusta. Al combinarse con la política de \textit{No Chunking}, el sistema garantiza que el generador disponga de dos fuentes completas y fiables para su proceso de verificación.
+
+\subsection{Configuración de Generadores y Evaluación Automática}
+
+La arquitectura del sistema exigió la configuración y orquestación de múltiples modelos de lenguaje, así como el diseño de un entorno de evaluación riguroso para auditar las respuestas generadas.
+
+\subsubsection{Orquestación de Modelos y Control de Generación}
+
+Para la fase de generación de respuestas, se evaluó un ecosistema híbrido compuesto por tres modelos diferenciados:
+\begin{itemize}
+    \item \textbf{Motor Local (SLM):} \textit{Phi-3-mini-4k-instruct}, ejecutado íntegramente en la GPU del nodo de cómputo local.
+    \item \textbf{Motores de Parámetros Masivos (LLMs):} \textit{Llama 3.3} y \textit{Qwen 3}, integrados en la nube mediante peticiones a la \textbf{API de Groq}. Por motivos de seguridad y buenas prácticas de desarrollo, las credenciales de la API se gestionaron de forma aislada mediante variables de entorno en un archivo \texttt{.env}.
+\end{itemize}
+
+Para garantizar la reproducibilidad del experimento y suprimir el comportamiento estocástico de los modelos (mitigando drásticamente la probabilidad de alucinación), el hiperparámetro de temperatura se fijó en \textbf{$T=0$} para todos los generadores. Asimismo, el comportamiento de los modelos fue gobernado mediante técnicas de \textit{Prompt Engineering}, aplicando instrucciones sistémicas (\textit{System Prompts}) adaptadas a la naturaleza de la prueba:
+
+\begin{enumerate}
+    \item \textbf{Evaluación Zero-Shot (Sin RAG):} A los modelos que operaban únicamente con su memoria paramétrica se les asignó una instrucción no restrictiva: \textit{«Eres un asistente directo. Responde a la pregunta de manera muy breve y concisa.»}
+    \item \textbf{Evaluación RAG (Léxico y Semántico):} Se implementó un \textit{prompt} defensivo de \textit{Fact-Checking}. La instrucción forzaba al modelo a responder utilizando exclusivamente el texto inyectado en el contexto, prohibiendo expresamente la extrapolación con conocimiento externo. Como medida de seguridad adicional, se programó una cláusula de escape estricta: en caso de que el contexto de Elasticsearch careciera de la información necesaria, el modelo debía abstenerse respondiendo con la cadena exacta: \textit{«No tengo información suficiente en mis archivos.»}
+\end{enumerate}
+
+\subsubsection{Diseño del Tribunal Automatizado (LLM-as-a-Judge)}
+
+Dado el volumen del \textit{dataset} final (220 preguntas), la validación humana resultaba inviable y propensa a sesgos cognitivos. Por ello, se implementó un marco de evaluación automatizada basado en el paradigma \textit{LLM-as-a-Judge}. 
+
+Se instanció un modelo masivo a través de la API de Groq (\texttt{gpt-oss-120b}), configurado estructuralmente mediante la librería \texttt{LangChain} (\textit{ChatPromptTemplate}). El juez automatizado evaluó cada par de respuestas (la \textit{Respuesta Esperada} u original del dataset y la \textit{Respuesta Generada} por el sistema RAG) basándose en las siguientes reglas de oro predefinidas:
+
+\begin{itemize}
+    \item \textbf{Equivalencia Semántica sobre Léxica:} El juez fue instruido para dar por válida una respuesta aunque presentase variaciones sintácticas, siempre y cuando transmitiera exactamente el mismo dato factual que la respuesta de referencia.
+    \item \textbf{Aislamiento Cognitivo:} Se le prohibió utilizar su propio conocimiento para dictaminar la veracidad de un hecho, limitando su juicio exclusivamente a la comparativa de las dos cadenas de texto proporcionadas.
+    \item \textbf{Salida Binaria Estricta:} Para evitar ambigüedades en la recolección estadística posterior, el tribunal fue forzado a devolver como única salida (clasificación categórica) la palabra \textbf{CORRECTO} o \textbf{INCORRECTO}.
+\end{itemize}
