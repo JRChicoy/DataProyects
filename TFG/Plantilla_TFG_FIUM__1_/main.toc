@@ -1,24 +1,49 @@
 \xpg@aux {}{spanish}
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Estado del arte}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Seccion 1}{10}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Seccion 2}{15}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Análisis de objetivos y metodología}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Objetivos Generales}{21}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Metodología}{22}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Diseño y resolución del trabajo realizado}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Diseño Experimental}{25}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Entorno de Experimentación y Herramientas}{25}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}El Corpus de Noticias y Proceso ETL}{26}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Estrategias de Representación y Recuperación}{27}{subsection.4.1.3}%
-\contentsline {subsubsection}{\nonumberline Gestión de Contexto Integral: Ausencia de Fragmentación (\textit {No Chunking})}{28}{subsubsection*.15}%
-\contentsline {subsubsection}{\nonumberline Optimización del Hiperparámetro de Recuperación (Top-k)}{28}{subsubsection*.16}%
-\contentsline {subsection}{\numberline {4.1.4}Configuración de Generadores y Evaluación Automática}{28}{subsection.4.1.4}%
-\contentsline {subsubsection}{\nonumberline Orquestación de Modelos y Control de Generación}{29}{subsubsection*.17}%
-\contentsline {subsubsection}{\nonumberline Diseño del Tribunal Automatizado (LLM-as-a-Judge)}{29}{subsubsection*.18}%
-\contentsline {chapter}{\numberline {5}Conclusiones y vías futuras}{31}{chapter.5}%
+\contentsline {section}{\numberline {1.1}Contexto y Motivación}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Planteamiento del Problema: Las limitaciones de los LLMs}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Propuesta de Solución: Generación Aumentada por Recuperación (RAG)}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Alcance y Enfoque del Proyecto}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Estructura de la Memoria}{3}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Estado del arte}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Paso del modelo estadístico al mecanismo de atención}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Alucinación en modelos de lenguaje}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Recuperación de información: de la búsqueda por palabras clave a los vectores semánticos}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}BM25 y la búsqueda léxica}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Recuperación semántica mediante \textit {embeddings}}{7}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Generación Aumentada por Recuperación}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Modelos de lenguaje pequeños como generadores}{9}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Evaluación de respuestas (LLM-as-a-judge)}{10}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Análisis de objetivos y metodología}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Objetivos Generales}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Metodología}{14}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Diseño y resolución del trabajo realizado}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Diseño Experimental}{17}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Entorno de Experimentación y Herramientas}{17}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}El Corpus de Noticias y Proceso ETL}{18}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Estrategias de Recuperación}{21}{subsection.4.1.3}%
+\contentsline {subsubsection}{\nonumberline Gestión de Contexto: Ausencia de Fragmentación (\textit {No Chunking})}{21}{subsubsection*.12}%
+\contentsline {subsubsection}{\nonumberline Optimización del Hiperparámetro de Recuperación (Top-k)}{22}{subsubsection*.13}%
+\contentsline {subsection}{\numberline {4.1.4}Configuración de Generadores y Evaluación Automática}{22}{subsection.4.1.4}%
+\contentsline {subsubsection}{\nonumberline Orquestación de Modelos y Control de Generación}{22}{subsubsection*.14}%
+\contentsline {subsubsection}{\nonumberline Diseño del Juez Automatizado (LLM-as-a-Judge)}{23}{subsubsection*.15}%
+\contentsline {section}{\numberline {4.2}Resultados de la Evaluación Comparativa}{25}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Fase Piloto y Validación del Juez (80 preguntas)}{25}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Rendimiento de Modelos Base (Zero-Shot)}{26}{subsection.4.2.2}%
+\contentsline {subsubsection}{\nonumberline Fiabilidad del Juez Automatizado: Combinación con la Evaluación Humana}{27}{subsubsection*.18}%
+\contentsline {subsection}{\numberline {4.2.3}Evaluación Global a Gran Escala (220 Preguntas)}{28}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Análisis de Errores y Calidad del Sistema}{31}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Clasificación Cualitativa de Fallos}{31}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Comparativa de Rendimiento según el Tipo de Pregunta}{33}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Discusión y Ensamblaje del Sistema Óptimo}{35}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}El balance entre escala de modelo y precisión}{35}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Arquitectura del Sistema RAG Final}{35}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Análisis de Errores: El Impacto del Modelo Generador}{37}{subsection.4.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Vías Futuras}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones Generales y Síntesis del Sistema}{41}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Limitaciones del Sistema y la Metodología}{42}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Consideraciones Éticas en la Detección de Desinformación}{42}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Vías Futuras}{43}{section.5.4}%
+\contentsline {chapter}{\nonumberline Bibliografía}{45}{chapter*.30}%
 \def \@chapapp {\appendixname }
-\contentsline {chapter}{\numberline {A}Anexo I}{75}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Páginas horizontales}{77}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Importar PDF}{81}{appendix.C}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

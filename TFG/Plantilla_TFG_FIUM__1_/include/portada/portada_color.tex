@@ -53,14 +53,14 @@
 	% Fondo del color del grado
 	\pagecolor{\colorgrado}
 	\begin{tikzpicture}[overlay, remember picture, inner sep=0pt, outer sep=0pt]
-		\node[anchor=north west,inner sep=0pt] at ($(current page.north west)+(2.1cm,-2cm)$)
-			{\includegraphics[width=3.2cm]{\logoUniversidadPortada}};
+		\node[anchor=north west,inner sep=0pt] at ($(current page.north west)+(1cm,-1cm)$)
+			{\includegraphics[width=6cm]{\logoUniversidadPortada}};
 	\end{tikzpicture}
-	
+
 	% Logo de la facultad en la esquina superior derecha
 	\begin{tikzpicture}[remember picture,overlay]
-		\node[anchor=north west,inner sep=0pt] at ($(current page.north west)+(16.65cm,-2.3cm)$)
-	    	{\includegraphics[width=2.5cm]{\logoFacultadPortada}};
+		\node[anchor=north west,inner sep=0pt] at ($(current page.north west)+(15.5cm,-1.75cm)$)
+	    	{\includegraphics[width=4.5cm]{\logoFacultadPortada}};
 	\end{tikzpicture}
 	
 	% Titulo y subtitulo
@@ -83,8 +83,8 @@
 	% Franja negra con logotipo 
 	\begin{tikzpicture}[overlay, remember picture, inner sep=0pt, outer sep=0pt]
 	  \fill [black] (current page.south west) rectangle (\paperwidth,\paperheight-26.4cm);
-	\node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(15cm,1.6cm)$)
-	              {\includegraphics[width=6.2cm]{\logoFacultadPortadaBaja}};
+	\node[anchor=south west,inner sep=0pt] at ($(current page.south west)+(12cm,1.7cm)$)
+	              {\includegraphics[width=7.5cm]{\logoFacultadPortadaBaja}};
 	\end{tikzpicture}
 	
 	% Información personal y fecha

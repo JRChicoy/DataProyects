@@ -1,0 +1,154 @@
+\begin{thebibliography}{23}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Mencía-Ripley et~al.(2025)]{mencia2025mapping}
+A.~Mencía-Ripley et~al.
+\newblock Mapping the impact of generative {AI} on disinformation: Insights from a scoping review.
+\newblock \emph{Publications}, 13\penalty0 (3):\penalty0 33, 2025.
+\newblock \doi{10.3390/publications13030033}.
+\newblock URL \url{https://www.mdpi.com/2304-6775/13/3/33}.
+
+\bibitem[Guo et~al.(2022)Guo, Schlichtkrull, and Vlachos]{guo2022survey}
+Zhijiang Guo, Michael Schlichtkrull, and Andreas Vlachos.
+\newblock A survey on automated fact-checking.
+\newblock \emph{Transactions of the Association for Computational Linguistics}, 10:\penalty0 178--206, 2022.
+\newblock \doi{10.1162/tacl_a_00454}.
+\newblock URL \url{https://aclanthology.org/2022.tacl-1.11/}.
+
+\bibitem[Jang et~al.(2022)]{jang2022towards}
+Joel Jang et~al.
+\newblock Towards continual knowledge learning of language models.
+\newblock \emph{arXiv preprint arXiv:2110.03215}, 2022.
+\newblock URL \url{https://arxiv.org/abs/2110.03215}.
+
+\bibitem[Alansari and Luqman(2025)]{alansari2025hallucination}
+A.~Alansari and H.~Luqman.
+\newblock Large language models hallucination: A comprehensive survey.
+\newblock \emph{arXiv preprint arXiv:2510.06265}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2510.06265}.
+
+\bibitem[Lewis et~al.(2020)]{lewis2020rag}
+Patrick Lewis et~al.
+\newblock Retrieval-augmented generation for knowledge-intensive {NLP} tasks.
+\newblock In \emph{Advances in Neural Information Processing Systems}, volume~33, pages 9459--9474, 2020.
+\newblock URL \url{https://arxiv.org/abs/2005.11401}.
+
+\bibitem[Chen et~al.(2024)Chen, Xiao, Zhang, Luo, Lian, and Liu]{chen2024bge}
+Jianlv Chen, Shitao Xiao, Peitian Zhang, Kun Luo, Defu Lian, and Zheng Liu.
+\newblock {BGE} {M3}-embedding: Multi-lingual, multi-functionality, multi-granularity text embeddings through self-knowledge distillation.
+\newblock In \emph{Findings of the Association for Computational Linguistics: ACL 2024}, 2024.
+\newblock \doi{10.18653/v1/2024.findings-acl.137}.
+\newblock URL \url{https://aclanthology.org/2024.findings-acl.137/}.
+
+\bibitem[Abdin et~al.(2024)Abdin, Jacobs, Awan, et~al.]{abdin2024phi3}
+Marah Abdin, Sam~Ade Jacobs, Ammar~Ahmad Awan, et~al.
+\newblock Phi-3 technical report: A highly capable language model locally on your phone.
+\newblock \emph{arXiv preprint arXiv:2404.14219}, 2024.
+\newblock \doi{10.48550/arXiv.2404.14219}.
+\newblock URL \url{https://arxiv.org/abs/2404.14219}.
+
+\bibitem[Zheng et~al.(2023)]{zheng2023judging}
+Lianmin Zheng et~al.
+\newblock Judging {LLM}-as-a-judge with {MT}-bench and chatbot arena.
+\newblock \emph{arXiv preprint arXiv:2306.05685}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2306.05685}.
+
+\bibitem[{OpenAI}(2025)]{openai2025gptoss}
+{OpenAI}.
+\newblock {gpt-oss-120b \& gpt-oss-20b} model card, 2025.
+\newblock URL \url{https://arxiv.org/abs/2508.10925}.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin]{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS)}, 2017.
+\newblock URL \url{https://arxiv.org/abs/1706.03762}.
+
+\bibitem[Welleck et~al.(2019)Welleck, Kulikov, Roller, Dinan, Cho, and Weston]{welleck2019neural}
+Sean Welleck, Ilia Kulikov, Stephen Roller, Emily Dinan, Kyunghyun Cho, and Jason Weston.
+\newblock Neural text degeneration with unlikelihood training.
+\newblock \emph{arXiv preprint arXiv:1908.04319}, 2019.
+\newblock URL \url{https://arxiv.org/abs/1908.04319}.
+
+\bibitem[Kalai and Vempala(2023)]{kalai2023calibrated}
+Adam~Tauman Kalai and Santosh~S. Vempala.
+\newblock Calibrated language models must hallucinate.
+\newblock \emph{arXiv preprint arXiv:2311.14648}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2311.14648}.
+
+\bibitem[Bender et~al.(2021)Bender, Gebru, McMillan-Major, and Shmitchell]{bender2021parrots}
+Emily~M. Bender, Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell.
+\newblock On the dangers of stochastic parrots: Can language models be too big?
+\newblock In \emph{Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT)}, pages 610--623, 2021.
+\newblock \doi{10.1145/3442188.3445922}.
+\newblock URL \url{https://dl.acm.org/doi/10.1145/3442188.3445922}.
+
+\bibitem[Robertson and Zaragoza(2009)]{robertson2009bm25}
+Stephen~E. Robertson and Hugo Zaragoza.
+\newblock The probabilistic relevance framework: {BM25} and beyond.
+\newblock \emph{Foundations and Trends in Information Retrieval}, 3\penalty0 (4):\penalty0 333--389, 2009.
+\newblock \doi{10.1561/1500000019}.
+\newblock URL \url{https://www.staff.city.ac.uk/~sbrp622/papers/foundations_bm25_review.pdf}.
+
+\bibitem[Karpukhin et~al.(2020)Karpukhin, O{\u{g}}uz, Min, Lewis, Wu, Edunov, Chen, and Yih]{karpukhin2020dpr}
+Vladimir Karpukhin, Barlas O{\u{g}}uz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, and Wen-tau Yih.
+\newblock Dense passage retrieval for open-domain question answering.
+\newblock In \emph{Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)}, pages 6769--6781, 2020.
+\newblock \doi{10.18653/v1/2020.emnlp-main.550}.
+\newblock URL \url{https://aclanthology.org/2020.emnlp-main.550/}.
+
+\bibitem[Reimers and Gurevych(2019)]{reimers2019sbert}
+Nils Reimers and Iryna Gurevych.
+\newblock Sentence-{BERT}: Sentence embeddings using siamese {BERT}-networks.
+\newblock In \emph{Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing}. Association for Computational Linguistics, 2019.
+\newblock URL \url{https://arxiv.org/abs/1908.10084}.
+
+\bibitem[Wang et~al.(2024)Wang, Yang, Huang, Yang, Majumder, and Wei]{wang2024multilingual}
+Liang Wang, Nan Yang, Xiaolong Huang, Linjun Yang, Rangan Majumder, and Furu Wei.
+\newblock Multilingual {E5} text embeddings: A technical report.
+\newblock \emph{arXiv preprint arXiv:2402.05672}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2402.05672}.
+
+\bibitem[Gao et~al.(2024)Gao, Xiong, Gao, Jia, Pan, Bi, Dai, Sun, and Wang]{gao2024rag}
+Yunfan Gao, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi~Dai, Jiawei Sun, and Haofen Wang.
+\newblock Retrieval-augmented generation for large language models: A survey.
+\newblock \emph{arXiv preprint arXiv:2312.10997}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2312.10997}.
+
+\bibitem[Liu et~al.(2024)Liu, Lin, Hewitt, Paranjape, Bevilacqua, Petroni, and Liang]{liu2024lost}
+Nelson~F. Liu, Kevin Lin, John Hewitt, Ashwin Paranjape, Michele Bevilacqua, Fabio Petroni, and Percy Liang.
+\newblock Lost in the middle: How language models use long contexts.
+\newblock \emph{Transactions of the Association for Computational Linguistics}, 12:\penalty0 157--173, 2024.
+\newblock \doi{10.1162/tacl_a_00638}.
+\newblock URL \url{https://aclanthology.org/2024.tacl-1.9/}.
+
+\bibitem[Wataoka et~al.(2024)Wataoka, Takahashi, and Ri]{wataoka2024selfpref}
+Koki Wataoka, Tsubasa Takahashi, and Ryokan Ri.
+\newblock Self-preference bias in {LLM}-as-a-judge.
+\newblock \emph{arXiv preprint arXiv:2410.21819}, 2024.
+\newblock \doi{10.48550/arxiv.2410.21819}.
+\newblock URL \url{https://arxiv.org/abs/2410.21819}.
+
+\bibitem[Celikyilmaz et~al.(2020)Celikyilmaz, Clark, and Gao]{celikyilmaz2020evaluation}
+Asli Celikyilmaz, Elizabeth Clark, and Jianfeng Gao.
+\newblock Evaluation of text generation: A survey.
+\newblock \emph{arXiv preprint arXiv:2006.14799}, 2020.
+\newblock URL \url{https://arxiv.org/abs/2006.14799}.
+
+\bibitem[{Google}(2026)]{google2026gemini}
+{Google}.
+\newblock Gemini (modelo de lenguaje de ia), 2026.
+\newblock URL \url{https://gemini.google.com}.
+\newblock Herramienta de asistencia en el desarrollo.
+
+\bibitem[{Anthropic}(2026)]{anthropic2026claude}
+{Anthropic}.
+\newblock Claude (modelo de lenguaje de ia), 2026.
+\newblock URL \url{https://www.claude.ai}.
+\newblock Herramienta de asistencia en el desarrollo.
+
+\end{thebibliography}

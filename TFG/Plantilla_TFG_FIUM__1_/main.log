@@ -1,6 +1,6 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.25)  25 APR 2026 21:15
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.4.25)  27 MAY 2026 23:39
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **/Users/jrc/Desktop/TFG/Plantilla_TFG_FIUM__1_/main
@@ -1282,11 +1282,11 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
 \glo@main@file=\write5
 \openout5 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 73.
+Package glossaries Info: Writing glossary file main.glo on input line 71.
 \glo@acronym@file=\write6
 \openout6 = `main.acn'.
 
-Package glossaries Info: Writing glossary file main.acn on input line 73.
+Package glossaries Info: Writing glossary file main.acn on input line 71.
  (./anexos/_acronimos.tex)
 Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           Using `bookmark' together with `hyperref' is recommended,
@@ -1295,7 +1295,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 80.
+(scrbook)           before \begin{document} on input line 78.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
@@ -1304,36 +1304,36 @@ File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
 )) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-Package scrbase Info: activating spanish \partname on input line 80.
-Package scrbase Info: activating spanish \chaptername on input line 80.
-Package scrbase Info: activating spanish \appendixname on input line 80.
-Package scrbase Info: activating spanish \figurename on input line 80.
-Package scrbase Info: activating spanish \tablename on input line 80.
-Package scrbase Info: activating spanish \contentsname on input line 80.
-Package scrbase Info: activating spanish \listfigurename on input line 80.
-Package scrbase Info: activating spanish \listtablename on input line 80.
-Package scrbase Info: activating spanish \bibname on input line 80.
-Package scrbase Info: activating spanish \indexname on input line 80.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+Package scrbase Info: activating spanish \partname on input line 78.
+Package scrbase Info: activating spanish \chaptername on input line 78.
+Package scrbase Info: activating spanish \appendixname on input line 78.
+Package scrbase Info: activating spanish \figurename on input line 78.
+Package scrbase Info: activating spanish \tablename on input line 78.
+Package scrbase Info: activating spanish \contentsname on input line 78.
+Package scrbase Info: activating spanish \listfigurename on input line 78.
+Package scrbase Info: activating spanish \listtablename on input line 78.
+Package scrbase Info: activating spanish \bibname on input line 78.
+Package scrbase Info: activating spanish \indexname on input line 78.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1376,56 +1376,56 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup11
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 80.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 80.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 80.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 80.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 80.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 80.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 80.
-LaTeX Font Info:    Redeclaring math accent \check on input line 80.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 80.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 80.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 80.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 80.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 78.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 78.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 78.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 78.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 78.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 78.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 78.
+LaTeX Font Info:    Redeclaring math accent \check on input line 78.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 78.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 78.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 78.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 78.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 80.
+(Font)              `operators' in the math version `normal' on input line 78.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 80.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 78.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 80.
+(Font)              `operators' in the math version `bold' on input line 78.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 80.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 78.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 80.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 80.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 80.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 80.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 80.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 78.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 80.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 80.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 80.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 78.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 80.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 78.
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 Package caption Info: Begin \AtBeginDocument code.
@@ -1440,13 +1440,13 @@ Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
 Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 ))
-Package hyperref Info: Link coloring OFF on input line 80.
+Package hyperref Info: Link coloring OFF on input line 78.
 
 
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 80.
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 78.
 
 \c@lstlisting=\count435
-Package tocbasic Info: setting babel extension for `lol' on input line 80.
+Package tocbasic Info: setting babel extension for `lol' on input line 78.
 \scr@dte@lstlisting@maxnumwidth=\skip182
 (./include/portada/portada_color.tex
 
@@ -1505,10 +1505,10 @@ Package fontspec Info:
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \centeroffset=\skip183
-File: include/logos-universidad/escudo_umu.png Graphic file (type bmp)
-<include/logos-universidad/escudo_umu.png>
-File: include/logos-titulaciones/Simbolo-negativo-sin-fondo.png Graphic file (type bmp)
-<include/logos-titulaciones/Simbolo-negativo-sin-fondo.png>
+File: include/logos-universidad/logo_universidad.png Graphic file (type bmp)
+<include/logos-universidad/logo_universidad.png>
+File: include/logos-titulaciones/logo_facultad.png Graphic file (type bmp)
+<include/logos-titulaciones/logo_facultad.png>
 LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1535,8 +1535,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--81
 
  []
 
-File: include/logos-titulaciones/FIUM-postivo-sin-fondo.png Graphic file (type bmp)
-<include/logos-titulaciones/FIUM-postivo-sin-fondo.png>
+File: include/logos-titulaciones/logo_facultad_y_texto.png Graphic file (type bmp)
+<include/logos-titulaciones/logo_facultad_y_texto.png>
 [1
 
 \openout4 = `main.ist'.
@@ -1592,14 +1592,10 @@ Overfull \hbox (20.53343pt too wide) in paragraph at lines 32--44
 |  $[]$ 
  []
 
-File: include/logos-titulaciones/FI-positivo.png Graphic file (type bmp)
-<include/logos-titulaciones/FI-positivo.png>
-File: include/logos-titulaciones/Logotipo_DIIC.png Graphic file (type bmp)
-<include/logos-titulaciones/Logotipo_DIIC.png>
-File: include/logos-universidad/um.png Graphic file (type bmp)
-<include/logos-universidad/um.png>
+File: logo_uni_facultad_negro.png Graphic file (type bmp)
+<logo_uni_facultad_negro.png>
 
-Overfull \hbox (20.53343pt too wide) in paragraph at lines 49--69
+Overfull \hbox (20.53343pt too wide) in paragraph at lines 49--62
 |  $[]$ 
  []
 
@@ -1609,11 +1605,7 @@ Overfull \hbox (20.53343pt too wide) in paragraph at lines 49--69
 
 
 
-]
-
-Package natbib Warning: Citation `UNE50136:97' on page v undefined on input line 14.
-
-[5] [6
+] [5] [6
 
 
 ] [7
@@ -1625,13 +1617,9 @@ Package natbib Warning: Citation `UNE50136:97' on page v undefined on input line
 ] [9
 
 
+
+
 ] [10
-
-
-] [11
-
-
-] [12
 
 
 ]) (./preambulos/1_declaracion_originalidad.tex
@@ -1667,896 +1655,155 @@ Package natbib Warning: Citation `UNE50136:97' on page v undefined on input line
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 45.
- [13
+File: include/firma.jpg Graphic file (type bmp)
+<include/firma.jpg>
+ [11
 
 
 
-]) (./preambulos/2_resumen.tex [14
+]) (./preambulos/2_resumen.tex [12
 
 
 
-]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 14.
-
-) (./preambulos/3_extended_abstract.tex [15] [16]
-
-Package todonotes Warning: Trying to put a shadow below a todonote,but the loadshadowlibrary option was not given when loadingthe todonotes package on input line 15.
+]) (./preambulos/3_extended_abstract.tex [13] [14
 
 
-Overfull \hbox (2.34543pt too wide) in paragraph at lines 15--15
-[][][] 
- []
+] [15] [16] [17]) [18] (./main.toc [19
 
 
-Overfull \hbox (2.34543pt too wide) in paragraph at lines 15--15
-[][][] 
- []
-
-[17
-
-
-] [18] [19] [20]) [21] [22
-
-
-] (./main.toc)
+])
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- [23] [24
-
-
-] (./main.lof)
+ [20] (./main.lof)
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- [25] [26
+ [21
+
+
+] [22
 
 
 ] (./main.lot)
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [27] [28
-
-
-] (./main.lol)
-\tf@lol=\write10
-\openout10 = `main.lol'.
-
- [29] [30
+ [23] [24
 
 
 ] (./capitulos/1_introduccion.tex
 chapter 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--19
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--22
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--28
-
- []
-
 [1
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 45--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--56
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 72--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--83
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
-
- []
-
-) (./capitulos/2_estado_arte.tex [6] [7] [8
+] [2]) (./capitulos/2_estado_arte.tex [3] [4
 
 
 ]
 chapter 2.
+[5] [6]
+LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <14.4> not available
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 46.
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
- []
+Package scrlayer-scrpage Warning: \headheight to low.
+(scrlayer-scrpage)                At least 28.99998pt needed,
+(scrlayer-scrpage)                but only 18.125pt found.
+(scrlayer-scrpage)                I'll enlarge \headheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., setting geometry's option
+(scrlayer-scrpage)                `head=28.99998pt'.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 49.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
+Overfull \vbox (10.87498pt too high) has occurred while \output is active []
 
- []
+ [7] [8] [9]) (./capitulos/3_analisis.tex [10] [11] [12
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--23
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--26
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9]
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 45--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--53
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 72--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--83
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--86
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 102--105
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--115
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--124
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--127
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 142--144
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--154
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 155--157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
-
- []
-
-[19]) (./capitulos/3_analisis.tex
-Underfull \hbox (badness 10000) in paragraph at lines 171--5
-
- []
-
-[20]
+]
 chapter 3.
-[21
 
+Overfull \hbox (0.2503pt too wide) in paragraph at lines 20--21
+\TU/lmr/m/n/12 gía de evaluación usando “LLM-as-a-judge” con un modelo de parámetros masivos
+ []
 
-] [22]) (./capitulos/4_diseno.tex [23] [24
+[13] [14]) (./capitulos/4_diseno.tex [15] [16
 
 
 ]
 chapter 4.
-[25] [26]
+[17] [18] [19]
+File: archivos/distribucion_fuentes.png Graphic file (type bmp)
+<archivos/distribucion_fuentes.png>
+ [20]
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <12> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 72.
- [27] [28] [29]) (./capitulos/5_conclusiones.tex [30]
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 85.
+ [21] [22] (/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+) [23] [24] [25] [26
+
+] [27]
+File: archivos/grafico_rendimiento_220_preguntas.png Graphic file (type bmp)
+<archivos/grafico_rendimiento_220_preguntas.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28] [29] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 317--317
+[]|\TU/lmr/bx/n/12 Phi-3 (RAG
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--332
+[]|\TU/lmr/bx/n/12 Phi-3 (RAG
+ []
+
+[31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+File: archivos/grafico_radar_doble.png Graphic file (type bmp)
+<archivos/grafico_radar_doble.png>
+ [33] [34] [35]
+File: archivos/grafico_barras_final.png Graphic file (type bmp)
+<archivos/grafico_barras_final.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36] [37]
+File: archivos/grafico_sectores_errores.png Graphic file (type bmp)
+<archivos/grafico_sectores_errores.png>
+ [38]) (./capitulos/5_conclusiones.tex [39] [40
+
+
+]
 chapter 5.
-)
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 57>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 57>
- [31
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41] [42] [43]) (./main.bbl [44]
+chapter without number
+[45
 
 
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 57>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 57>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 57>
- [32
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 58>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 58>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 58>
- [33
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 59>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 59>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 59>
- [34
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 60>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 60>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 60>
- [35
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 61>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 61>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 61>
- [36
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 62>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 62>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 62>
- [37
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 63>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 63>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 63>
- [38
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 64>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 64>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 64>
- [39
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 65>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 65>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 65>
- [40
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 66>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 66>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 66>
- [41
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 67>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 67>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 67>
- [42
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 68>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 68>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 68>
- [43
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 69>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 69>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 69>
- [44
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 70>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 70>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 70>
- [45
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 71>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 71>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 71>
- [46
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 72>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 72>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 72>
- [47
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 73>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 73>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 73>
- [48
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 74>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 74>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 74>
- [49
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 75>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 75>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 75>
- [50
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 76>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 76>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 76>
- [51
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 77>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 77>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 77>
- [52
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 78>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 78>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 78>
- [53
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 79>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 79>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 79>
- [54
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 80>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 80>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 80>
- [55
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 81>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 81>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 81>
- [56
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 82>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 82>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 82>
- [57
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 83>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 83>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 83>
- [58
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 84>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 84>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 84>
- [59
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 85>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 85>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 85>
- [60
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 86>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 86>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 86>
- [61
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 87>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 87>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 87>
- [62
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 88>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 88>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 88>
- [63
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 89>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 89>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 89>
- [64
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 90>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 90>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 90>
- [65
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 91>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 91>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 91>
- [66
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 92>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 92>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 92>
- [67
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 93>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 93>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 93>
- [68
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 94>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 94>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 94>
- [69
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 95>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 95>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 95>
- [70
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 96>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 96>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 96>
- [71
-
-]
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 97>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 97>
-File: archivos/plantilla-tfg-fium.pdf Graphic file (type pdf)
-<use archivos/plantilla-tfg-fium.pdf, page 97>
- [72
-
-]
-No file main.bbl.
+] [46])
 No file main.acr.
-(./anexos/_anexo_I.tex [73] [74
-
-
-]
-chapter A.
-) (./anexos/_anexo_2.tex [75] [76
-
-
-]
-chapter B.
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-[77]
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-[78
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-
- []
-
-[79
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
-
-) (./anexos/_anexo_3.tex [80
-
-
-]
-chapter C.
-)
-
-Package natbib Warning: There were undefined citations.
-
-
-Package caption Warning: Unused \captionsetup[lstlisting] on input line 75.
-See the caption package documentation for explanation.
-
-[81
-
-
-] (./main.aux)
+[47] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 57881 strings out of 468168
- 1404037 string characters out of 5432815
- 2168102 words of memory out of 5000000
- 85541 multiletter control sequences out of 15000+600000
- 655709 words of font info for 182 fonts, out of 8000000 for 9000
+ 57949 strings out of 468168
+ 1400639 string characters out of 5432815
+ 2470463 words of memory out of 5000000
+ 85628 multiletter control sequences out of 15000+600000
+ 641143 words of font info for 123 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 113i,21n,110p,11346b,1015s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,20n,110p,11346b,1405s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (111 pages).
+Output written on main.pdf (71 pages).

@@ -7,4 +7,48 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\chapter{Conclusiones y vías futuras}
+\chapter{Conclusiones y Vías Futuras}
+
+\section{Conclusiones Generales y Síntesis del Sistema}
+
+El presente Trabajo Fin de Grado partía de una cuestión general expuesta en el capítulo \ref{cap:analisis}: determinar en qué medida una arquitectura RAG permite mitigar las alucinaciones de los modelos de lenguaje y cómo influye la selección de sus componentes en la veracidad final. Tras el análisis de resultados realizado a lo largo del capítulo \ref{cap:diseño}, la conclusión es categórica: la implementación de un sistema de Generación Aumentada por Recuperación no solo mitiga, sino que neutraliza casi por completo la invención de datos, siempre y cuando cumpla dos pilares fundamentales.
+
+El primer pilar radica en la capacidad de extracción de información. La experimentación demostró que navegar eficazmente por un corpus masivo de 490.000 noticias requiere superar las limitaciones de la búsqueda por palabras clave. El uso de un enfoque semántico vectorial (mediante el modelo BGE-M3) superó ampliamente la tasa de acierto del algoritmo léxico tradicional (BM25) en 25.9 puntos porcentuales.
+
+El segundo pilar reside en el tamaño y la calidad del modelo generador. En el ámbito de la verificación de noticias (\textit{Fact-Checking}), el peor escenario posible no es la falta de respuesta ante una consulta, sino la generación de información plausible pero falsa que comprometa la credibilidad del sistema. Bajo esta premisa, la superioridad de Llama 3.3 70B frente al otro modelo evaluado en el RAG (Phi-3) resultó determinante. Al integrar un modelo de gran escala que ya poseía una buena capacidad para abstenerse (52,5\% de acierto en preguntas trampa) sin un \textit{System Prompt} que le diera instrucciones, el sistema RAG óptimo logró transformar casi la totalidad de los fallos de recuperación en abstenciones seguras, reduciendo la tasa de alucinación a un 2,2\% del conjunto de errores cometidos. 
+
+En definitiva, la combinación de una recuperación semántica precisa y un razonamiento robusto conforma una arquitectura altamente fiable. Al indexar el conocimiento en una base de datos vectorial, y confiar la interpretación a un modelo con una buena capacidad de abstención intrínseca, el sistema consigue anular el riesgo elevado de las alucinaciones que poseen otro tipo de sistemas y/o modelos base. Esta investigación confirma que el diseño cuidadoso de arquitecturas RAG representa en la actualidad un estándar seguro para utilizar inteligencia artificial generativa en entornos críticos donde la veracidad es innegociable como es el caso del \textit{Fact-Checking} .
+
+\section{Limitaciones del Sistema y la Metodología}
+
+A pesar de los resultados obtenidos en la configuración final, el sistema desarrollado presenta ciertas limitaciones metodológicas y arquitectónicas que deben ser consideradas:
+
+\begin{itemize}
+    \item \textbf{Limitaciones computacionales y de infraestructura:} El procesamiento masivo de información y la evaluación del \textit{dataset} conllevaron tiempos de ejecución relativamente elevados. Además, la dependencia de APIs para acceder a modelos mas potentes introdujo restricciones por límites de cuota y peticiones simultáneas (\textit{rate limits}). Asimismo, estas restricciones condicionaron la selección de los modelos evaluados; si bien Llama 3.3 70B ofreció un rendimiento excepcional, el estudio no incluyó el uso de modelos comerciales que son mucho más avanzados (como las últimas versiones de la familia GPT, Gemini o Claude) debido a los costes asociados a su uso.
+
+    \item \textbf{El marco de evaluación automática (\textit{LLM-as-a-Judge}):} La implementación de un modelo de parámetros masivos (120B) como juez automatizado resultó ser una herramienta excelente para procesar eficientemente la batería de preguntas y acelerar el proceso de corrección. Sin embargo, delegar la verificación en otra inteligencia artificial introduce el riesgo de heredar sesgos interpretativos del modelo evaluador, pudiendo ocasionar errores de corrección. Dado que el sistema automatizado no es infalible, la metodología requirió de la integración de una capa de supervisión humana (una lectura rápida de verificación) para revisar principalemente las preguntas de inferencia y garantizar la precisión absoluta de las métricas presentadas, impidiendo una autonomía total del proceso de corrección.
+
+    \item \textbf{Corpus estático y temporalidad:} El marco operativo del sistema está estrictamente restringido a la base de datos indexada, compuesta por aproximadamente 490.000 noticias preprocesadas. Al tratarse de un corpus estático y carecer de conexión a internet en tiempo real, la arquitectura es incapaz de recuperar información o verificar afirmaciones sobre eventos recientes que hayan ocurrido con posterioridad a la extracción de los datos. Por consiguiente, la efectividad del sistema está sujeta a una ventana temporal cerrada, limitando su aplicabilidad inmediata como herramienta de validación de noticias de última hora en un entorno periodístico real.
+\end{itemize}
+
+\section{Consideraciones Éticas en la Detección de Desinformación}
+
+El desarrollo e implementación de sistemas automatizados para tareas de \textit{Fact-Checking} conlleva implicaciones éticas profundas que trascienden la dimensión puramente técnica. Un sistema diseñado para dictaminar qué constituye una "verdad" o una "mentira" asume una gran responsabilidad, ya que sus veredictos pueden influir significativamente en la percepción de los usuarios. En este contexto, el mayor riesgo reside en la posibilidad de que el usuario final desarrolle una confianza ciega en la herramienta, delegando su juicio crítico en la Inteligencia Artificial.
+
+Es fundamental subrayar que el éxito arquitectónico de un sistema RAG se basa en asumir que los documentos recuperados contienen la verdad absoluta; sin embargo, el hecho de que una afirmación aparezca publicada en un medio de comunicación no garantiza su veracidad irrefutable. Los corpus de noticias, por su propia naturaleza periodística y editorial, son susceptibles de contener sesgos. 
+
+En este sentido, el impacto de dichos sesgos varía drásticamente según el tipo de consulta. Por un lado, en las \textbf{preguntas factuales} (fechas, nombres, datos concretos), el riesgo de sesgo es menor; si la recuperación es correcta, el sistema solo fallaría si la noticia original fuera directamente falsa o contuviera un error tipográfico (un fenómeno evidenciado en el Caso 5 del epígrafe 4.3.1, donde el sistema reprodujo un error de redacción de la fuente periodística alterando la fecha de fundación de una empresa). Por otro lado, en las \textbf{preguntas de inferencia}, el riesgo se multiplica exponencialmente, ya que aunque los hechos base de la noticia sean reales, el texto puede estar redactado con un enfoque o intencionalidad particular, lo cual hace que el sistema corra el riesgo de heredar y amplificar el sesgo editorial de la fuente, presentándolo al usuario como un razonamiento puramente objetivo.
+
+Por consiguiente, este sistema RAG no debe concebirse en ningún caso como un sistema de juicio absoluto. Su propósito ético e ideal es ser una ayuda para periodistas, verificadores humanos y usuarios críticos a la hora de verificar información, proporcionando un marco rápido de contraste de información que siempre debe estar sujeto a la revisión y validación final humana.
+
+\section{Vías Futuras}
+
+Si bien el sistema propuesto ha establecido una base robusta y competitiva para la mitigación de alucinaciones en tareas de verificación, la rápida evolución del ecosistema de la Inteligencia Artificial abre diversas líneas de investigación para perfeccionar y expandir la arquitectura en trabajos futuros. He decidido seleccionar tres vías de desarrollo:
+
+\begin{itemize}
+    \item \textbf{Evolución hacia un RAG Dinámico (Agentic RAG):} Para superar la limitación temporal del corpus estático actual, el siguiente paso consistiría en dotar al sistema de acceso a internet en tiempo real. Mediante el uso de herramientas de búsqueda web (\textit{Web Search}) o arquitecturas de agentes, el recuperador podría indexar noticias publicadas en el momento de la consulta. Esto permitiría al sistema contrastar eventos de última hora y desinformación emergente, multiplicando su utilidad práctica.
+
+    \item \textbf{Modelos de Frontera frente a Optimización Local (\textit{Fine-Tuning}):} Para intentar reducir el 2,2\% de error crítico actual al cero absoluto, resultaría de gran interés evaluar el impacto de integrar APIs comerciales mucho más avanzadas. Como contraparte a este enfoque de alto coste, una vía de investigación sumamente valiosa consistiría en aplicar técnicas de ajuste fino (\textit{fine-tuning}) sobre modelos locales ligeros, como el propio Phi-3. El objetivo sería entrenarlo específicamente para adquirir el comportamiento de abstención ("No lo sé") que Llama 3.3 70B demostró tener de forma natural, logrando así un sistema de alta fiabilidad computacionalmente muy económico.
+
+    \item \textbf{Integración de Multimodalidad:} En el ámbito actual de las \textit{Fake News}, gran parte de la desinformación no se difunde exclusivamente mediante texto, sino a través de fotografías manipuladas o descontextualizadas. Una evolución clave del sistema pasaría por incorporar modelos de visión artificial capaces de procesar una imagen de entrada, extraer su contexto semántico y cruzarlo con la base de datos periodística para verificar si la imagen corresponde a los hechos relatados.
+\end{itemize}

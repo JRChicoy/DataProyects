@@ -2,9 +2,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Distribución volumétrica del corpus de noticias según la fuente editorial (Top 15 dominios). Datos extraídos directamente de la indexación en Elasticsearch.}}{20}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Rendimiento global de las cinco configuraciones sobre el dataset completo (220 preguntas). Se evidencia la superioridad absoluta del RAG Semántico.}}{29}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Comparativa de rendimiento por tipo de pregunta entre configuraciones.}}{33}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Comparativa de la tasa de aciertos entre los modelos base, las arquitecturas RAG con SLM (Phi-3) y el sistema RAG óptimo (Llama 3.3 70B + Vectores).}}{36}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \xpg@aux {}{spanish}\ignorespaces Comparativa cualitativa de errores. Se evidencia la drástica reducción de la tasa de alucinación al emplear un modelo base con mayor grado de alineación.}}{38}{figure.caption.29}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \def \@chapapp {\appendixname }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

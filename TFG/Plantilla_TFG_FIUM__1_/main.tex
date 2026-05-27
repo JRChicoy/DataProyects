@@ -1,7 +1,7 @@
 % !TeX root = main.tex
 % !TeX document-id = {c6282027-a510-40f1-b05e-2f558a6cd3f1}
-% !TeX program = xelatex
-% !TeX TXS-program:compile = txs:///xelatex/[--shell-escape]
+% !TEX encoding = UTF-8 Unicode
+% !TeX TXS-program:compile = txs:///xelatex/[--shell-escape]|txs:///bibtex|txs:///xelatex/[--shell-escape]|txs:///xelatex/[--shell-escape]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Plantilla TFG/TFM
 % Universidad de Murcia. Facultad de Informática
@@ -20,17 +20,15 @@
 % Comentar lo que NO se desee añadir y sustituir con la información correcta.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Título y subtítulo
-\newcommand{\titulo}{Título del Trabajo Fin de Grado/Máster}
-\newcommand{\subtitulo}{Subtítulo del proyecto}
+\newcommand{\titulo}{Mitigación de alucinaciones en LLMs mediante el desarrollo de un sistema RAG para la verificación de noticias}
+\newcommand{\subtitulo}{Evaluación comparativa de recuperación léxica y semántica con modelos de lenguaje de distinta escala}
 % Datos del autor
-\newcommand{\miNombre}{Nombre Apellido1 Apellido2 (alumno)}
-\newcommand{\miDNI}{00000000A}
-\newcommand{\miEmail}{nombre@um.es}
+\newcommand{\miNombre}{Javier Ruiz Chicoy}
+\newcommand{\miDNI}{49245871L}
+\newcommand{\miEmail}{j.ruizchicoy@um.es}
 % Datos del tutor/es
-\newcommand{\miTutor}{Nombre Apellido1 Apellido2 (tutor1)}
-\newcommand{\miTutorB}{Nombre Apellido1 Apellido2 (tutor2)}
-\newcommand{\departamentoTutor}{Departamento del tutor}
-\newcommand{\departamentoTutorB}{Departamento del cotutor}
+\newcommand{\miTutor}{Rafael Valencia García}
+\newcommand{\miTutorB}{Ronghao Pan}
 % Datos de la facultada y universidad
 \newcommand{\miFacultad}{Facultad de Informática}
 \newcommand{\miFacultadCorto}{FIUM}
@@ -40,22 +38,22 @@
 
 % Configuración automática según el identificador elegido
 % Grados
-\definecolor{informatica}{RGB}{121,11,21}	% Informatica
+\definecolor{informatica}{RGB}{0,113,206}
 % Colores generales
 \definecolor{negro}{RGB}{0,0,0}
 \definecolor{blanco}{RGB}{255,255,255}
 
 % Logotipos comunes de todas las titulaciones
-\newcommand{\logoFacultadPortada}{include/logos-titulaciones/Simbolo-negativo-sin-fondo}
-\newcommand{\logoGradoPortada}{include/logos-titulaciones/Simbolo-negativo-sin-fondo} 
-\newcommand{\logoUniversidadPortada}{include/logos-universidad/escudo_umu}
-\newcommand{\logoFacultadPortadaBaja}{include/logos-titulaciones/FIUM-postivo-sin-fondo}
+\newcommand{\logoFacultadPortada}{include/logos-titulaciones/logo_facultad}
+\newcommand{\logoGradoPortada}{include/logos-titulaciones/logo_facultad}
+\newcommand{\logoUniversidadPortada}{include/logos-universidad/logo_universidad}
+\newcommand{\logoFacultadPortadaBaja}{include/logos-titulaciones/logo_facultad_y_texto}
 % Logos
 \newcommand{\logoGrado}{include/logos-titulaciones/FI-positivo}
 \newcommand{\logoDepartamento}{include/logos-titulaciones/Logotipo_DIIC}
 \newcommand{\logoUniversidad}{include/logos-universidad/um}
 % Texto
-\newcommand{\miGrado}{Grado en Ingeniería Informática}
+\newcommand{\miGrado}{Grado en Ciencia e Ingeniería de Datos}
 \newcommand{\tipotrabajo}{Trabajo Fin de Grado}
 % Color
 \newcommand{\colorgrado}{informatica}
@@ -100,7 +98,6 @@
 	\tableofcontents     	% Índice
 	\listoffigures	     	% Índice de figuras
 	\listoftables	     	% Índice de tablas
-	\lstlistoflistings 	    % Índice de códigos
 	
 	% Inicia la numeración habitual.
 	\mainmatter
@@ -115,19 +112,10 @@
 	\input{capitulos/3_analisis}
 	\input{capitulos/4_diseno}
 	\input{capitulos/5_conclusiones}
-	\includepdf[pages={57-97}]{archivos/plantilla-tfg-fium.pdf}
-	%\input{capitulos/_introduccion}		% Plantilla: Se muestran contenidos
-	%\input{capitulos/_marcoteorico}		% Plantilla: Se muestran listas
-	%\input{capitulos/_objetivos}		% Plantilla: Se muestran tablas
-	%\input{capitulos/_metodologia}		% Plantilla: Se muestran figuras
-	%\input{capitulos/_desarrollo}		% Plantilla: Se muestran listados
-	%\input{capitulos/_resultados}		% Plantilla: Se muestran gráficas
-	%\input{capitulos/_conclusiones}		% Plantilla: Se muestran matemáticas
-	
 	%%%%
 	% CONTENIDO. BIBLIOGRAFÍA.
 	%%%%
-	\nocite{*} %incluye TODOS los documentos de la base de datos bibliográfica sean o no citados en el texto
+	\nocite{anthropic2026claude, google2026gemini}
 	\bibliographystyle{unsrtnat}
 	\bibliography{bibliografia/bibliografia} % Archivo que contiene la bibliografía
 	
@@ -144,8 +132,5 @@
 	% CONTENIDO. Anexos - Añade o elimina según tus necesidades
 	%%%%
 	\appendix % Inicio de los apéndices
-	\input{anexos/_anexo_I}
-	\input{anexos/_anexo_2}
-	\input{anexos/_anexo_3}
 	
 \end{document}
